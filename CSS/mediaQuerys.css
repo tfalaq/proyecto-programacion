@@ -1,0 +1,15 @@
+@media only screen and (max-width:600px) {
+    .navbar {
+        position: relative;
+    }
+
+    .menubars {
+        display: black;
+        grid-column: 7/8;
+    }
+
+    .navbar .menu {
+        display: black;
+        width: 100%
+    }
+}
