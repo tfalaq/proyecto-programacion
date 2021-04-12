@@ -4,12 +4,12 @@
     }
 
     .menubars {
-        display: black;
+        display: block;
         grid-column: 7/8;
     }
 
     .navbar .menu {
-        display: black;
+        display:block;
         width: 100%
     }
 }
