@@ -3,11 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{ 
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+}
 .navbar {
     background: rgb(190, 156, 61);
     display: grid;
-    grid-template-columns: reapeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     align-items: center;
     padding: 1%;
 
@@ -29,8 +33,9 @@
 .navbar .menu li a {
     text-decoration: none;
     font-size: 1.3em;
-    color: rgb(83, 73, 73);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:black;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow: 0 0 3px rgb(190, 156, 61);
 }
 
 .menubars {
@@ -39,10 +44,11 @@
 .inicio{
     text-decoration: none;
     font-size: 70px;
-    color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
-    padding: 30px
+    padding: 30px;
+    text-shadow: 0 0 3px rgb(190, 156, 61);
 }
 .artistas {
     margin-left: auto;
@@ -54,15 +60,19 @@
 .nombres {
     text-decoration: none;
     font-size: 1.3em;
-    color: rgb(83, 73, 73);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow: 0 0 3px rgb(190, 156, 61);
 }
 .footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: black;
-  text-align: right;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  padding: 20px;
+    width: 100%;
+    color: white;
+    text-align: right;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 20px;
+  }
+.logo-footer{
+    position: left;
+    width: 50%;
+    height: auto;
 }
