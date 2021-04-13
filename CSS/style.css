@@ -57,3 +57,12 @@
     color: rgb(83, 73, 73);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: right;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 20px;
+}
