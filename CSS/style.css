@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(https://coolbackgrounds.io/images/backgrounds/white/white-triangle-369b8d2d.jpg);
 }
 
 .navbar {
@@ -39,17 +38,17 @@
 }
 .inicio{
     text-decoration: none;
-    font-size: 50px;
-    color: rgb(83, 73, 73);
+    font-size: 70px;
+    color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     padding: 30px
 }
 .artistas {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 10%;
+    padding-bottom: 20px;
 }
 
 .nombres {
