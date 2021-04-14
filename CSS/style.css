@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{ 
-    background-color: black;
+body{    
     background-position: center;
     background-size: cover;
+    background-color: rgba(0, 0, 0.918);
 }
 .navbar {
     background: rgb(190, 156, 61);
@@ -29,7 +30,6 @@ body{
     justify-content: space-around;
     list-style: none;
 }
-
 .navbar .menu li a {
     text-decoration: none;
     font-size: 1.3em;
@@ -40,39 +40,111 @@ body{
 
 .menubars {
     display: none;
+
 }
-.inicio{
-    text-decoration: none;
-    font-size: 70px;
+.btn{
+    font-size: 1em;
+    background: none;
+    color:white;
+    padding: 10px 20px;
+    border: 1px solid yellow;
+    border-radius: 30px;
+}
+.navbar .menu li a:hover{
     color: white;
-    font-family: 'Noto Sans JP', sans-serif;
-    text-align: center;
-    padding: 30px;
-    text-shadow: 0 0 3px rgb(190, 156, 61);
-}
-.artistas {
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-    padding-bottom: 20px;
 }
 
-.nombres {
-    text-decoration: none;
-    font-size: 1.3em;
-    color: white;
-    font-family: 'Noto Sans JP', sans-serif;
-    text-shadow: 0 0 3px rgb(190, 156, 61);
+.btn:hover{
+    cursor: pointer;
+    font-size: 1em;
+    background: yellow;
+    color; black;
 }
 .footer {
-    width: 100%;
-    color: white;
-    text-align: right;
-    font-family: 'Noto Sans JP', sans-serif;
-    padding: 20px;
+    display: grid;
+   height: 80px;
+   align-items: center;
+   background-color:  rgb(26, 24, 24);
+   color: #fff;
+   grid-template-areas:'members socialNet';
   }
-.logo-footer{
-    position: left;
-    width: 50%;
-    height: auto;
+
+.members ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
 }
+.socialNet{
+    display: flex;
+    justify-content: space-around;
+}
+.MainContent{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(4,1fr);
+    height: 80vh;
+    margin: 30px;
+}
+
+.card{ 
+    background-color: rgba(39, 39, 39, 0.514); 
+    border-radius: 3%; 
+    word-wrap: break-word; 
+    position: relative; 
+    display: flex; 
+    align-items: center;
+ }
+ .card p{
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     margin-left: 20px;
+     color: rgb(250, 204, 2);
+     font-weight: bold;
+     font-size: 1.5em;
+ }
+ 
+ .avatar{
+     position: absolute;
+     background-size: cover;
+     width: 85px;
+     height: 85px;
+     border-radius: 50%;
+     margin: auto;
+     top: 25%;
+     left: 65%;
+ }
+ .card .btn {
+     margin-left: 20px;
+     margin-top: 20px;
+ }
+ .Subtitle{
+     color: white;
+     font-family: 'Roboto';
+     font-size: 3em;
+     margin: 30px
+ }
+ .Busqueda{
+     grid-column: 8/9;
+     font-size: 2em;
+     cursor: pointer;
+     display: flex;
+     justify-content: space-around;
+ }
+ .Busqueda .btn{
+     margin-left: 12px;
+     font-size: 0.8em;
+     background: none;
+     color: white;
+     padding; 2px 10px;
+     border: 1px solid transparent;
+     border-radius: 30px
+ }
+.Busqueda input{
+    margin-left: 12px;
+}
+.busquedaocultar{
+    display: none;
+}
+.busquedaMostrar{
+    display:block;
+}
+
