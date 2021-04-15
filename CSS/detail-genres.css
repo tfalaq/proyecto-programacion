@@ -81,7 +81,7 @@ body{
 .MainContent{
     display: grid;
     gap: 2em;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     height: 80vh;
     margin: 30px;
 }
