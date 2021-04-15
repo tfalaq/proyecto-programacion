@@ -1,18 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/detail-album.css">
     <link rel="stylesheet" href="./css/mediaQuerys.css">
+    <link rel="stylesheet" href="../css/detail-album.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />"
-    <title> Kolav </title>  
-</head>
+  <title>Kolav</title> 
+
+     <!-- Header -->
+
+    </head>
 <body>
     <header>
+      <div class="navbar">
+        <img class="logo" src="../img/KOLAV-LOGO.png" alt="">
+        
+        <div class= "buscador">
+          <input type="text" name="search" placeholder="Search..">
+        </div>
+  
+        <ul class="menu" id="menu">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="./detail-artist.html">ARTISTS</a></li>
+          <li><a href="./html/genres.html">GENRES</a></li> 
+          <li><a href="./detail-album.html">ALBUMS</a></li>
+        </ul>
+      </div>
 
+      <div class="menubars" id="menubar">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="busqueda">
+        <i class="fas fa-search" id="btnBuscar"></i>
+        <input id="buscador" type="text" class="busquedaocultar" pkaceholder="Buscador">
+        <button id="EjecutarBusqueda" class="btn busquedaocultar"><i class="fas fa-search"></i></button>
+      </div>
+      </div>
     </header>
-    
 
-</body>
+    <!-- Agregamos los albums -->
+    <main>
+      <h3 class="Subtitle">
+        <i class="fas fa-crown"></i> Top Albums
+      </h3>
+      <div class="MainContent">
+        <div class="card">
+          <div class="avatar" style="background-image: url('../img/badbunnyalbum.jpeg')"></div>
+          <div>
+            <p>YHLQSMDLG</p>
+            <button class="btn">Ver más</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="avatar" style="background-image: url('../img/britney-in-the-zone.jpeg')"></div>
+          <div>
+            <p>In The Zone</p>
+            <button class="btn">Ver más</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="avatar" style="background-image: url('../img/nevermind.jpeg')"></div>
+          <div>
+            <p>Nevermind</p>
+            <button class="btn">Ver más</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="avatar" style="background-image: url('../img/Soda-Stereo-Cancion-animal-primera-portada.jpeg')"></div>
+          <div>
+            <p>Cancion Animal</p>
+            <button class="btn">Ver más</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="avatar" style="background-image: url('../img/taichualbum.jpeg')"></div>
+          <div>
+            <p>Cheese</p>
+            <button class="btn">Ver más</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="avatar" style="background-image: url('../img/maluma_pretty_boy_dirty_boy-portada.jpeg')"></div>
+          <div>
+            <p>Pretty Boy Dirty Boy</p>
+            <button class="btn">Ver más</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="avatar" style="background-image: url('../img/Queen-news-of-the-world.jpeg')"></div>
+          <div>
+            <p>News of the World</p>
+            <button class="btn">Ver más</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="avatar" style="background-image: url('../img/spinettaalbum.jpeg')"></div>
+          <div>
+            <p>Pelusion of Milk</p>
+            <button class="btn">Ver más</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="avatar" style="background-image: url('../img/rolling-album.jpeg')"></div>
+          <div>
+            <p>Tattoo You</p>
+            <button class="btn">Ver más</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="avatar" style="background-image: url('../img/abbeyroad.jpeg')"></div>
+          <div>
+            <p>Abbey Road</p>
+            <button class="btn">Ver más</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="avatar" style="background-image: url('../img/american-idiot-green-day-2004.jpeg')"></div>
+          <div>
+            <p>American Idiot</p>
+            <button class="btn">Ver más</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="avatar" style="background-image: url('../img/Fenix-Nicky-Jam.jpeg')"></div>
+          <div>
+            <p>Fenix</p>
+            <button class="btn">Ver más</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+       <!-- Agregamos mismo footer -->
+
+    <footer class="footer">
+      <div class="socialNet">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-whatsapp"></i>
+      </div>
+      <div class="members">
+        <ul>
+          <li><i class="fas fa-cube"></i>Tomas Falaq</li>
+          <li><i class="fas fa-cube"></i>Serena Saguier</li>
+          <li><i class="fas fa-cube"></i>Macs Alfonso</li>
+  
+        </ul>
+      </div>
+    </footer>
+    </body>
+  
+  </html>
