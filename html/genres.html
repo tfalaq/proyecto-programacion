@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/genres.css">
-    <link rel="stylesheet" href="./css/mediaQuerys.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/genres.css">
+  <link rel="stylesheet" href="./css/mediaQuerys.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />"
-  <title>Kolav</title> 
+  <title>Kolav</title>
 </head>
+
 <body>
-<header>
+  <header>
     <div class="navbar">
       <img class="logo" src="../img/KOLAV-LOGO.png" alt="">
       <ul class="menu" id="menu">
-        <li><a href="./html/index.html">HOME</a></li>
+        <li><a href="/index.html">HOME</a></li>
         <li><a href="detail-artist.html">ARTISTS</a></li>
-        <li><a href="genres.html">GENRES</a></li> 
+        <li><a href="genres.html">GENRES</a></li>
         <li><a href="detail-album.html">ALBUMS</a></li>
       </ul>
+      <div class="Busqueda">
+        <button id="EjecutarBusqueda" class="buscadorBoton"><i class="fas fa-search"></i></button>
+        <input class="buscadorFondo" type="text" placeholder="Busca tu Artista " >
+        
+      </div>
     </div>
     <div class="menubars" id="menubar">
       <i class="fas fa-bars"></i>
     </div>
-    <div class="busqueda">
-      <i class="fas fa-search" id="btnBuscar"></i>
-      <input id="buscador" type="text" class="busquedaocultar" pkaceholder="Buscador">
-      <button id="EjecutarBusqueda" class="btn busquedaocultar"><i class="fas fa-search"></i></button>
     </div>
-    </div>
+    
   </header>
-    <main>
+  <main>
     <h3 class="Subtitle">
       <i class="fas fa-crown"></i> Genres
     </h3>
@@ -39,8 +42,8 @@
         <div class="avatar" style="background-image: url('../img/rock.jpeg')"></div>
         <div>
           <p>Rock</p>
-          <form method="get" action="../html/detail-genres.html" > 
-          <button class="btn" type="submit" >Ver más</button>
+          <form method="get" action="../html/detail-genres.html">
+            <button class="btn" type="submit">Ver más</button>
           </form>
         </div>
       </div>
@@ -48,40 +51,40 @@
         <div class="avatar" style="background-image: url('../img/rock-nacional.jpeg')"></div>
         <div>
           <p>Rock nacional</p>
-          <form method="get" action="../html/detail-genres.html" > 
-          <button class="btn" type="submit" >Ver más</button>
+          <form method="get" action="../html/detail-genres.html">
+            <button class="btn" type="submit">Ver más</button>
         </div>
       </div>
       <div class="card">
         <div class="avatar" style="background-image: url('../img/reaggeton.jpeg')"></div>
         <div>
           <p>Reaggeton</p>
-          <form method="get" action="../html/detail-genres.html" > 
-          <button class="btn" type="submit" >Ver más</button>
+          <form method="get" action="../html/detail-genres.html">
+            <button class="btn" type="submit">Ver más</button>
         </div>
       </div>
       <div class="card">
         <div class="avatar" style="background-image: url('../img/pop.jpeg')"></div>
         <div>
           <p>Pop</p>
-          <form method="get" action="../html/detail-genres.html" > 
-          <button class="btn" type="submit" >Ver más</button>
+          <form method="get" action="../html/detail-genres.html">
+            <button class="btn" type="submit">Ver más</button>
         </div>
       </div>
       <div class="card">
         <div class="avatar" style="background-image: url('../img/trap.jpeg')"></div>
         <div>
           <p>Trap</p>
-          <form method="get" action="../html/detail-genres.html" > 
-          <button class="btn" type="submit" >Ver más</button>
+          <form method="get" action="../html/detail-genres.html">
+            <button class="btn" type="submit">Ver más</button>
         </div>
       </div>
       <div class="card">
         <div class="avatar" style="background-image: url('../img/electropop.jpeg')"></div>
         <div>
           <p>Electropop</p>
-          <form method="get" action="../html/detail-genres.html" > 
-          <button class="btn" type="submit" >Ver más</button>
+          <form method="get" action="../html/detail-genres.html">
+            <button class="btn" type="submit">Ver más</button>
         </div>
       </div>
   </main>
@@ -103,4 +106,3 @@
     </div>
   </footer>
 </body>
-  

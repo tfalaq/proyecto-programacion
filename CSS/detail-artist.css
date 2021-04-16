@@ -19,10 +19,11 @@ body{
 }
 
 .buscador{
-    width: 130px;
-    box-sizing: border-box;
-    padding: 12px 20px 12px 40px;
-    transition: width 0.4s ease-in-out;
+    grid-column: 8/9;
+     font-size: 2em;
+     cursor: pointer;
+     display: flex;
+     justify-content: space-around;
 }
 
 .navbar .logo {

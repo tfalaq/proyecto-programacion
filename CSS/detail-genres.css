@@ -123,27 +123,23 @@ body{
      margin: 30px
  }
  .Busqueda{
-     grid-column: 8/9;
-     font-size: 2em;
-     cursor: pointer;
-     display: flex;
-     justify-content: space-around;
+    grid-column: 8/9;
  }
  .Busqueda .btn {
-     margin-left: 12px;
-     font-size: 0.8em;
-     background: none;
-     color: white;
-     padding: 2px 10px;
-     border: 1px solid transparent;
-     border-radius: 30px
- }
-.Busqueda input{
-    margin-left: 12px;
+    margin-left: 10px;
+    font-size: 0.3em;
+    background: none;
+    color: white;
+    padding: 2px 10px;
+    border: 1px solid transparent;
+    border-radius: 30px
 }
-.busquedaocultar {
-    display: none;
+.Buscador{
+   margin-left: 5px;
+   grid-column: 8/9;
+   font-size: 2em;
+   cursor: pointer;
+   display: flex;
+   justify-content: space-around;
 }
-.busquedaMostrar {
-    display:block;
-}
+
