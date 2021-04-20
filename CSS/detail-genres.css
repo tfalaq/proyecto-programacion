@@ -81,11 +81,6 @@ body{
 .MainContent {
     display: grid;
     gap: 2em;
-<<<<<<< HEAD
-    grid-template-columns: repeat(2,1fr);
-    height: 80vh;
-    margin: 30px;
-=======
     grid-template-columns: repeat(4, 1fr);
     height: 20vh;
     margin: 10px;
@@ -96,7 +91,6 @@ body{
     grid-template-columns: repeat(4, 1fr);
     height: 20vh;
     margin: 10px;
->>>>>>> c4039024026512839b44206d1a66b9cebdab5651
 }
 
 .card{ 
