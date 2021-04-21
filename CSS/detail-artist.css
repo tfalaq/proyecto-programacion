@@ -128,6 +128,12 @@ body {
 
 }
 
+#infosingle{
+    font-family: 'Roboto', sans-serif;
+        color: rgb(156, 112, 45);
+      font-size: 100%;
+      text-align: left;
+        word-wrap: break-word; }
 
 .avatar {
     position: absolute;
