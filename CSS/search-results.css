@@ -1,20 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-
+body{    
     background-position: center;
     background-size: cover;
     background-color: rgba(0, 0, 0.918);
 }
-
 .navbar {
-    margin-top: 15px;
     background: rgb(190, 156, 61);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -35,44 +30,36 @@ body {
     justify-content: space-around;
     list-style: none;
 }
-
-
 .navbar .menu li a {
     text-decoration: none;
     font-size: 1.3em;
-    color: black;
+    color:black;
     font-family: 'Noto Sans JP', sans-serif;
     text-shadow: 0 0 3px rgb(190, 156, 61);
 }
 
 .menubars {
     display: none;
+
 }
-.btn {
+.btn{
     font-size: 1em;
     background: none;
-    color: white;
+    color:white;
     padding: 10px 20px;
     border: 1px solid yellow;
     border-radius: 30px;
-
-
 }
-
-.navbar .menu li a:hover {
-
+.navbar .menu li a:hover{
     color: white;
-
 }
 
-.btn:hover {
+.btn:hover{
     cursor: pointer;
     font-size: 1em;
     background: yellow;
     color: black;
 }
-
-
 .footer {
     display: grid;
     height: 80px;
@@ -98,67 +85,68 @@ body {
 
     display: grid;
     gap: 2em;
-    grid-template-columns: repeat(4, 1fr);
-    height: 80vh;
-    margin: 15px;
+    grid-template-columns: repeat(1, 2fr);
+    height: 30vh;
+    margin: 20vh;
+    padding: 10px;
 }
 
 .card {
     background-image: url(https://wallpaperaccess.com/full/304200.jpg);
     background-color: rgba(39, 39, 39, 0.514);
     border-radius: 3%;
-    word-wrap: break-word;
     position: relative;
     display: flex;
     align-items: center;
-
-
 }
 
 .card p {
     font-family: 'Roboto', sans-serif;
-    margin-left: 20px;
-    color:  rgb(250, 250, 65);
+    margin-left: 30px;
+    color: rgb(253, 253, 8);
     font-weight: bold;
+    margin-left: 300px;
     font-size: 1.5em;
 
 }
 
+#infosingle{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(156, 112, 45);
+    font-size: 1.3em;
+    text-align: left;
+    word-wrap: normal;
+    margin-left: 300px;
+    }
+
+    #infosingleplaylist{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 1.3em;
+        text-align: left;
+        word-wrap: normal;
+        margin-left: 450px;
+        color: inherit;
+        text-decoration: none;
+        }
 
 .avatar {
     position: absolute;
     background-size: cover;
-    width: 85px;
-    height: 85px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: auto;
     top: 25%;
-    left: 65%;
+    left: 50%;
+    bottom: 25%;
 
 }
 
 .card .btn {
     margin-left: 20px;
     margin-top: 20px;
-
 }
-#infosingle{
-    font-family: 'Roboto', sans-serif;
-        margin-left: 20px;
-        color: white;
-      font-size: 13px;
-      text-align: left;
-        word-wrap: break-word;
-    }
-
-    #infosingle2 {
-        font-family: 'Roboto', sans-serif;
-            margin-left: 20px;
-            color: rgb(190, 156, 61);
-          font-size: 20px;
-          text-align: left;
-            word-wrap: break-word;
-        }
 
 .Subtitle {
     color: white;
@@ -167,7 +155,8 @@ body {
     margin: 30px;
 }
 
-.Busqueda {
+
+  .Busqueda {
     grid-column: 8/9;
     font-size: 2em;
     cursor: pointer;
@@ -194,6 +183,4 @@ body {
     padding: 10px 10px;
     border: 1px solid yellow;
     border-radius: 10px;
-
-
 }
