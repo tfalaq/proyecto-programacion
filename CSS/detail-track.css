@@ -82,10 +82,9 @@ body{
 }
 
 .MainContent {
-
     display: grid;
     gap: 2em;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     height: 30vh;
     margin: 10px;
 }
@@ -118,7 +117,23 @@ body{
       text-align: left;
         word-wrap: break-word;
          margin-left: 20px;
+         
          }
+#audios{
+    height: 5vh ;
+    margin: 10px;
+    
+}
+
+#infoplaylist{
+    font-family: 'Roboto', sans-serif;
+        color: rgb(156, 112, 45);
+      font-size: 100%;
+      text-align: left;
+        word-wrap: break-word;
+         margin-left: 20px;
+         
+}
 
 
 

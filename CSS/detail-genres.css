@@ -67,6 +67,7 @@ body{
    background-color:  rgb(26, 24, 24);
    color: #fff;
    grid-template-areas:'members socialNet';
+   margin-top: 33vh;
   }
 
 .members ul{
