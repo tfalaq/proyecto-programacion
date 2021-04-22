@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/detail-track.css">
-  <link rel="stylesheet" href="./css/mediaQuerys.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />"
   <title>Kolav</title>
@@ -23,9 +22,9 @@
         <li><a href="detail-album.html">ALBUMS</a></li>
       </ul>
       <div class="Busqueda">
-      <form class="busq" action="../html/search-results.html" method=get>
-        <button id="EjecutarBusqueda" class="buscadorBoton"><i class="fas fa-search"></i></button>
-        <input class="buscadorFondo" type="text" placeholder="Busca tu Artista "> </input>
+        <form class="busq" action="../html/search-results.html" method=get>
+          <button id="EjecutarBusqueda" class="buscadorBoton"><i class="fas fa-search"></i></button>
+          <input class="buscadorFondo" type="text" placeholder="Busca tu Artista "> </input>
         </form>
 
       </div>
@@ -38,10 +37,10 @@
   </header>
 
   <main>
-  <h3 class="Subtitle">
+    <h3 class="Subtitle">
       <i class="far fa-play-circle"></i> Top tracks
     </h3>
-    
+
     <div class="MainContent">
       <div class="card">
         <div class="avatar" style="background-image: url('../img/britney-in-the-zone.jpeg')"></div>
@@ -51,19 +50,16 @@
             Britney Spears</p>
           <p id=infosingle>
             In The Zone </p>
-            <p id=infosingle>
+          <p id=infosingle>
             Pop </p>
-           <a id=infosingle href=""> Agregar cancion a Playlist</a> 
-            <p id=infoplaylist> <a  href="playlist.html"> Ver mi Playlist</a> </p>
-            
-            <audio id=audios scr="audios/britneytoxic.mp3" controls="">
-             </audio>
-          </div>
+          <a id=addplaylist href=""> Add to Playlist</a>
+          <p> <a href="playlist.html" class="formap">Mi playlist</a> </p>
+
+          <audio id=audios scr="audios/britneytoxic.mp3" controls="">
+          </audio>
         </div>
       </div>
-       </article>
-       <article>
-      <div class="MainContent">
+
       <div class="card">
         <div class="avatar" style="background-image: url('../img/badbunnyalbum.jpeg')"></div>
         <div>
@@ -72,18 +68,14 @@
             Bad Bunny</p>
           <p id=infosingle>
             YHLQMDLG </p>
-            <p id=infosingle>
+          <p id=infosingle>
             Reggeaton </p>
-            <a id="infosingle" href="" > Agregar cancion a playlist</a> 
-            <p id=infoplaylist> <a  href="playlist.html"> Ver mi Playlist</a> </p>
-            <audio id=audios scr="audios/badbunny.mp3" controls=""> </audio>
-           
-          </div>
+          <a id=addplaylist href=""> Add to Playlist</a>
+          <p> <a href="playlist.html" class="formap"> Mi Playlist</a> </p>
+          <audio id=audios scr="audios/badbunny.mp3" controls=""> </audio>
+
         </div>
       </div>
-      </div>
-    
-    <div class="MainContent">
       <div class="card">
         <div class="avatar" style="background-image: url('../img/ojosdepapel.png')"></div>
         <div>
@@ -92,16 +84,16 @@
             Luis Alberto Spinneta</p>
           <p id=infosingle>
             Almendra </p>
-            <p id=infosingle>
+          <p id=infosingle>
             Pop </p>
-            <a id="infosingle" href=""> Agregar cancion a playlist</a> 
-            <p id=infoplaylist> <a  href="playlist.html"> Ver mi Playlist</a> </p>
-            <audio id=audios scr="audios/muchacha-almendra.mp3" controls=""> </audio>
-          </div>
+          <a id=addplaylist href=""> Add to Playlist</a>
+          <p> <a href="playlist.html"  class="formap"> Mi Playlist</a> </p>
+          <audio id=audios scr="audios/muchacha-almendra.mp3" controls=""> </audio>
         </div>
       </div>
-      </div>
-    
+    </div>
+
+
 
   </main>
 
@@ -112,7 +104,7 @@
       <i class="fab fa-twitter"></i>
       <i class="fab fa-whatsapp"></i>
     </div>
-  
+
     <div class="members">
       <ul>
         <li><i class="fas fa-cube"></i>Tomas Falaq</li>
@@ -123,8 +115,4 @@
     </div>
   </footer>
 
-  </body>
-
-
-
-
+</body>

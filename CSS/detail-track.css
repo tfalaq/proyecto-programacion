@@ -67,6 +67,7 @@ body{
     background-color: rgb(26, 24, 24);
     color: #fff;
     grid-template-areas: ' members socialNet';
+    margin-top: 30vh;
 
 }
 
@@ -84,9 +85,9 @@ body{
 .MainContent {
     display: grid;
     gap: 2em;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(3, 1fr);
     height: 30vh;
-    margin: 10px;
+    margin: 20px;
 }
 
 .card {
@@ -119,35 +120,46 @@ body{
          margin-left: 20px;
          
          }
+#addplaylist{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(161, 153, 142);
+  font-size: 100%;
+  text-align: left;
+    word-wrap: break-word;
+     margin-left: 20px;
+     text-decoration: none;
+}
 #audios{
     height: 5vh ;
     margin: 10px;
     
 }
 
-#infoplaylist{
-    font-family: 'Roboto', sans-serif;
-        color: rgb(156, 112, 45);
-      font-size: 100%;
-      text-align: left;
-        word-wrap: break-word;
-         margin-left: 20px;
-         
-}
-
+.formap{
+    font-family: 'Roboto';
+    font-size: 60%;
+    text-decoration: none;
+    color:white;
+    padding: 2px 5px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-top: 10px;
+    }
 
 
 .avatar {
-    position: absolute;
-    background-size: cover;
-    width: 85px;
-    height: 85px;
-    border-radius: 50%;
-    margin: auto;
-    top: 25%;
-    left: 65%;
-
-}
+        position: absolute;
+        background-size: cover;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        margin: auto;
+        top: 25%;
+        left: 65%;
+    
+    }
 
 .card .btn {
     margin-left: 20px;
