@@ -62,13 +62,15 @@ body{
 }
 .footer {
     display: grid;
-   height: 80px;
-   align-items: center;
-   background-color:  rgb(26, 24, 24);
-   color: #fff;
-   grid-template-areas:'members socialNet';
-  }
-  .members ul {
+    height: 80px;
+    align-items: center;
+    background-color: rgb(26, 24, 24);
+    color: #fff;
+    grid-template-areas: ' members socialNet';
+
+}
+
+.members ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
