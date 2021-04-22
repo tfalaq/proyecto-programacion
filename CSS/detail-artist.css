@@ -49,9 +49,6 @@ body {
     display: none;
 }
 
-
-
-
 .btn {
     font-size: 1em;
     background: none;
@@ -122,7 +119,7 @@ body {
 .card p {
     font-family: 'Roboto', sans-serif;
     margin-left: 20px;
-    color: rgb(253, 253, 8);;
+    color: rgb(253, 253, 8);
     font-weight: bold;
     font-size: 1.5em;
 
@@ -136,6 +133,15 @@ body {
         word-wrap: break-word;
          margin-left: 20px;
          }
+
+#infogenre{ 
+        font-family: 'Roboto', sans-serif;
+        margin-left: 20px;
+        color: rgb(235, 163, 10);
+      font-size: 105%;
+      text-align: left;
+        word-wrap: break-word;
+    }
 
 .avatar {
     position: absolute;

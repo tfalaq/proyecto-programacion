@@ -14,7 +14,7 @@ body {
 }
 
 .navbar {
-    margin-top: 15px;
+    margin-top: 3px;
     background: rgb(190, 156, 61);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -80,6 +80,12 @@ body {
     background-color: rgb(26, 24, 24);
     color: #fff;
     grid-template-areas: ' members socialNet';
+<<<<<<< HEAD
+=======
+   margin-bottom: auto;
+   margin-top: 15vh;
+
+>>>>>>> 14aca0e8f82786c14451d907405f6e2de4d5784d
 }
 
 

@@ -67,6 +67,7 @@ body{
    background-color:  rgb(26, 24, 24);
    color: #fff;
    grid-template-areas:'members socialNet';
+   margin-top: 33vh;
   }
 
 .members ul{
@@ -121,7 +122,7 @@ body{
 .card p{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 20px;
-    color: white;
+    color: rgb(253, 253, 8);
     font-weight: bold;
     font-size: 1.5em;
 }
