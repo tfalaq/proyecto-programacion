@@ -74,7 +74,7 @@ body {
     align-items: center;
     background-color: rgb(26, 24, 24);
     color: #fff;
-    grid-template-areas: ' members socialNet';
+    grid-template-areas: ' members socialNet'; 
 
 }
 
