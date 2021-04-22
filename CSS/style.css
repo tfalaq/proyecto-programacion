@@ -111,10 +111,18 @@ body {
 .card p {
     font-family: 'Roboto', sans-serif;
     margin-left: 20px;
-    color:white;
+    color: rgb(250, 250, 65);
     font-weight: bold;
     font-size: 1.5em;
 
+}
+#infoalbum{ 
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    color: rgb(235, 163, 10);
+  font-size: 105%;
+  text-align: left;
+    word-wrap: break-word;
 }
 
 
@@ -153,23 +161,25 @@ font-family: 'Roboto', sans-serif;
 
 .Busqueda {
     grid-column: 8/9;
-    font-size: 2em;
+    font-size: 1em;
     cursor: pointer;
-    display: flex;
-    justify-content: space-around;
+    display: block;
+    
+    
 
 }
 
 .buscadorBoton {
-    display: block;
+    grid-column: 7/8;
     font-size: 1, 5em;
     background: none;
     color: white;
-    padding: 5px 5px;
+    padding: 4px 5px;
     border: 1px solid yellow;
     border-radius: 10px;
     justify-content: space-around;
     cursor: pointer;
+    
 }
 
 .buscadorFondo {
@@ -181,3 +191,4 @@ font-family: 'Roboto', sans-serif;
 
 
 }
+
