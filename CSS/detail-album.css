@@ -80,7 +80,6 @@ body {
     background-color: rgb(26, 24, 24);
     color: #fff;
     grid-template-areas: ' members socialNet';
-  
 
 }
 
@@ -93,7 +92,6 @@ body {
 .socialNet {
     display: flex;
     justify-content: space-around;
-   
 }
 
 .MainContent {
@@ -122,7 +120,7 @@ body {
     margin-left: 20px;
     color: white;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 24px;
 
 }
 
@@ -147,12 +145,20 @@ body {
 #infosingle{
     font-family: 'Roboto', sans-serif;
         margin-left: 20px;
-        color: rgb(156, 112, 45);
-      font-size: 100%;
+        color: white;
+      font-size: 13px;
       text-align: left;
         word-wrap: break-word;
     }
 
+    #infosingle2 {
+        font-family: 'Roboto', sans-serif;
+            margin-left: 20px;
+            color: rgb(190, 156, 61);
+          font-size: 20px;
+          text-align: left;
+            word-wrap: break-word;
+        }
 
 .Subtitle {
     color: white;
@@ -188,5 +194,6 @@ body {
     padding: 10px 10px;
     border: 1px solid yellow;
     border-radius: 10px;
+
 
 }
