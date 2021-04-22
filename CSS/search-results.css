@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{    
+
+body {
+
     background-position: center;
     background-size: cover;
     background-color: rgba(0, 0, 0.918);
 }
+
 .navbar {
+    margin-top: 15px;
     background: rgb(190, 156, 61);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -30,35 +35,136 @@ body{
     justify-content: space-around;
     list-style: none;
 }
+
+
 .navbar .menu li a {
     text-decoration: none;
     font-size: 1.3em;
-    color:black;
+    color: black;
     font-family: 'Noto Sans JP', sans-serif;
     text-shadow: 0 0 3px rgb(190, 156, 61);
 }
 
 .menubars {
     display: none;
-
 }
-.btn{
+.btn {
     font-size: 1em;
     background: none;
-    color:white;
+    color: white;
     padding: 10px 20px;
     border: 1px solid yellow;
     border-radius: 30px;
-}
-.navbar .menu li a:hover{
-    color: white;
+
+
 }
 
-.btn:hover{
+.navbar .menu li a:hover {
+
+    color: white;
+
+}
+
+.btn:hover {
     cursor: pointer;
     font-size: 1em;
     background: yellow;
     color: black;
+}
+
+
+.footer {
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background-color: rgb(26, 24, 24);
+    color: #fff;
+    grid-template-areas: ' members socialNet';
+
+}
+
+.members ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.socialNet {
+    display: flex;
+    justify-content: space-around;
+}
+
+.MainContent {
+
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(4, 1fr);
+    height: 80vh;
+    margin: 15px;
+}
+
+.card {
+    background-image: url(https://wallpaperaccess.com/full/304200.jpg);
+    background-color: rgba(39, 39, 39, 0.514);
+    border-radius: 3%;
+    word-wrap: break-word;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.card p {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+
+.avatar {
+    position: absolute;
+    background-size: cover;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin: auto;
+    top: 25%;
+    left: 65%;
+
+}
+
+.card .btn {
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+#infosingle{
+    font-family: 'Roboto', sans-serif;
+        margin-left: 20px;
+        color: white;
+      font-size: 13px;
+      text-align: left;
+        word-wrap: break-word;
+    }
+
+    #infosingle2 {
+        font-family: 'Roboto', sans-serif;
+            margin-left: 20px;
+            color: rgb(190, 156, 61);
+          font-size: 20px;
+          text-align: left;
+            word-wrap: break-word;
+        }
+
+.Subtitle {
+    color: white;
+    font-family: 'Roboto';
+    font-size: 3em;
+    margin: 30px;
 }
 
 .Busqueda {
@@ -90,24 +196,4 @@ body{
     border-radius: 10px;
 
 
-} 
-
-.footer {
-    display: grid;
-   height: 80px;
-   align-items: center;
-   background-color:  rgb(26, 24, 24);
-   color: #fff;
-   grid-template-areas:'members socialNet';
-  }
-
-  .members ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-
-.socialNet {
-    display: flex;
-    justify-content: space-around;
 }

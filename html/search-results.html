@@ -10,34 +10,77 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />"
   <title>Kolav</title>
 </head>
-
 <body>
   <header>
     <div class="navbar">
       <img class="logo" src="../img/KOLAV-LOGO.png" alt="">
-      <ul class="menu" id="menu">
 
+      <ul class="menu">
         <li><a href="../index.html">HOME</a></li>
         <li><a href="detail-artist.html">ARTISTS</a></li>
         <li><a href="genres.html">GENRES</a></li>
         <li><a href="detail-album.html">ALBUMS</a></li>
       </ul>
       <div class="Busqueda">
+      <form class="busq" action="../html/search-results.html" method=get>
         <button id="EjecutarBusqueda" class="buscadorBoton"><i class="fas fa-search"></i></button>
-        <input class="buscadorFondo" type="text" placeholder="Busca tu Artista "> </input>
-
+        <input class="buscadorFondo" type="text" placeholder="Busca tu Artista " >
+        </form>
+        <div class="menubars" id="menubar">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
     </div>
     <div class="menubars" id="menubar">
       <i class="fas fa-bars"></i>
     </div>
-
     </div>
+    </div>
+
+    
+    
   </header>
 
+  <!-- Resultado -->
   <main>
+    <h3 class="Subtitle">
+      <i class="far fa-play-circle"></i>Resultado:
+    </h3>
+    <div class="MainContent">
+      <div class="card">
+        <div class="avatar" style="background-image: url('../img/Fenix-Nicky-Jam.jpeg')"></div>
+        <div>
+          <p id=titulobusqueda>Fenix</p>
+          <p id=infosingle2>
+            Nicky Jam</p>
+          <p id=infosingle2>
+            Año:2017 </p>
+            <p id=infosingle2>
+             Reggaeton</p>
+             <ol id=infosingle >
+            <li>El ganador </li>
+            <li>Estrella </li> 
+            <li>Por el momento</li>
+            <li>Amor prohibido </li> 
+            <li>El amante</li>
+            <li>Superheroe </li> 
+            <li>Si tu la es</li>
+            <li> No te puedo olvidar</li> 
+            <li>Nadie como tu</li>
+            <li>No te vayas </li> 
+          </ol>
+              
+          
+        </div>
+      </div>
+    </div>
   </main>
 
+
+
+  <!-- Agregamos mismo footer -->
+
+  
   <footer class="footer">
     <div class="socialNet">
       <i class="fab fa-facebook"></i>
@@ -54,6 +97,5 @@
       </ul>
     </div>
   </footer>
-
-  </body>
-
+</body>
+</html>
