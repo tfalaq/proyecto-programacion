@@ -125,10 +125,14 @@ body{
         font-size: 1.3em;
         text-align: left;
         word-wrap: normal;
-        margin-left: 450px;
         color: inherit;
         text-decoration: none;
         }
+    #audios{
+    height: 5vh ;
+    margin: 10px 100px 10px 240px;
+    
+}
 
 .avatar {
     position: absolute;
