@@ -122,12 +122,18 @@ body {
 .card p {
     font-family: 'Roboto', sans-serif;
     margin-left: 20px;
-    color: rgb(250, 204, 2);
+    color: white;
     font-weight: bold;
     font-size: 1.5em;
 
 }
 
+#infosingle{
+    font-family: 'Roboto', sans-serif;
+        color: rgb(156, 112, 45);
+      font-size: 100%;
+      text-align: left;
+        word-wrap: break-word; }
 
 .avatar {
     position: absolute;

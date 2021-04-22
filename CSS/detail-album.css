@@ -80,6 +80,7 @@ body {
     background-color: rgb(26, 24, 24);
     color: #fff;
     grid-template-areas: ' members socialNet';
+  
 
 }
 
@@ -92,6 +93,7 @@ body {
 .socialNet {
     display: flex;
     justify-content: space-around;
+   
 }
 
 .MainContent {
@@ -118,7 +120,7 @@ body {
 .card p {
     font-family: 'Roboto', sans-serif;
     margin-left: 20px;
-    color: rgb(250, 204, 2);
+    color: white;
     font-weight: bold;
     font-size: 1.5em;
 
@@ -150,6 +152,7 @@ body {
       text-align: left;
         word-wrap: break-word;
     }
+
 
 .Subtitle {
     color: white;
@@ -185,6 +188,5 @@ body {
     padding: 10px 10px;
     border: 1px solid yellow;
     border-radius: 10px;
-
 
 }
