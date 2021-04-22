@@ -14,7 +14,7 @@ body {
 }
 
 .navbar {
-    margin-top: 15px;
+    margin-top: 3px;
     background: rgb(190, 156, 61);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
