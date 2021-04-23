@@ -161,11 +161,10 @@ font-family: 'Roboto', sans-serif;
 
 .Busqueda {
     grid-column: 8/9;
-    font-size: 1em;
+    font-size: 2em;
     cursor: pointer;
-    display: block;
-    
-    
+    display: flex;
+    justify-content: space-around;
 
 }
 

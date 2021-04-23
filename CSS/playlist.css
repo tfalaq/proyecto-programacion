@@ -64,8 +64,8 @@ body{
 .Busqueda {
     grid-column: 8/9;
     font-size: 2em;
-    display: flex;
     cursor: pointer;
+    display: flex;
     justify-content: space-around;
 
 }
@@ -88,15 +88,16 @@ body{
     padding: 10px 10px;
     border: 1px solid yellow;
     border-radius: 10px;
+
+
 }
 
 .MainContent {
-
     display: grid;
     gap: 2em;
     grid-template-columns: repeat(3, 1fr);
     height: 30vh;
-    margin: 20vh;
+    margin: 20px;
 }
 
 .card {
@@ -107,72 +108,64 @@ body{
     position: relative;
     display: flex;
     align-items: center;
+
+
 }
 
 .card p {
     font-family: 'Roboto', sans-serif;
-    margin-left: 20px;
+    margin-left: 25px;
     color: rgb(253, 253, 8);
     font-weight: bold;
     font-size: 1.5em;
 
 }
 
-.infosingle {
+.infosingle{
     font-family: 'Roboto', sans-serif;
-    color: rgb(156, 112, 45);
-    font-size: 100%;
-    text-align: left;
-    word-wrap: break-word;
-    margin-left: 4px;
-    text-decoration: none;
-    }
+        color: rgb(156, 112, 45);
+      font-size: 100%;
+      text-align: left;
+        word-wrap: break-word;
+         margin-left: 4px;
+         text-decoration: none;
+         
+         }
 
-
-    #audios{
+#audios{
     height: 5vh ;
-    margin: 10px 20px 10px 20px;
+    margin: 10px;
     
 }
-.formap{
-    font-family: 'Roboto';
-    font-size: 60%;
-    text-decoration: none;
-    color:white;
-    padding: 2px 5px;
-    border: 1px solid yellow;
-    border-radius: 10px;
-    justify-content: space-around;
-    cursor: pointer;
-    margin-top: 10px;
-    }
+
 
 
 .avatar {
-    position: absolute;
-    background-size: cover;
-    width: 85px;
-    height: 85px;
-    border-radius: 50%;
-    margin: auto;
-    top: 25%;
-    left: 25%;
-  
-
-}
+        position: absolute;
+        background-size: cover;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        margin: auto;
+        top: 25%;
+        left: 65%;
+    
+    }
 
 .card .btn {
     margin-left: 20px;
     margin-top: 20px;
 }
 
-
 .Subtitle {
     color: white;
     font-family: 'Roboto';
     font-size: 3em;
-    margin: 30px
+    margin: 30px;
 }
+
+
+
 .footer {
     display: grid;
    height: 80px;
@@ -180,7 +173,7 @@ body{
    background-color:  rgb(26, 24, 24);
    color: #fff;
    grid-template-areas:'members socialNet';
-   margin-top: 35vh;
+   margin-top: 63vh;
   }
 
   .members ul {
