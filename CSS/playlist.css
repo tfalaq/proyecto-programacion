@@ -65,8 +65,8 @@ body{
 .Busqueda {
     grid-column: 8/9;
     font-size: 2em;
-    cursor: pointer;
     display: flex;
+    cursor: pointer;
     justify-content: space-around;
 
 }
@@ -89,8 +89,82 @@ body{
     padding: 10px 10px;
     border: 1px solid yellow;
     border-radius: 10px;
+}
+
+.MainContent {
+
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
+    height: 30vh;
+    margin: 20vh;
+}
+
+.card {
+    background-image: url(https://wallpaperaccess.com/full/304200.jpg);
+    background-color: rgba(39, 39, 39, 0.514);
+    border-radius: 3%;
+    word-wrap: break-word;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.card p {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    color: rgb(253, 253, 8);
+    font-weight: bold;
+    font-size: 1.5em;
+
+}
+
+.infosingle {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(156, 112, 45);
+    font-size: 100%;
+    text-align: left;
+    word-wrap: break-word;
+    margin-left: 4px;
+    text-decoration: none;
+    }
 
 
+    #audios{
+    height: 5vh ;
+    margin: 10px 20px 10px 20px;
+    
+}
+.formap{
+    font-family: 'Roboto';
+    font-size: 60%;
+    text-decoration: none;
+    color:white;
+    padding: 2px 5px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-top: 10px;
+    }
+
+
+.avatar {
+    position: absolute;
+    background-size: cover;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin: auto;
+    top: 25%;
+    left: 25%;
+  
+
+}
+
+.card .btn {
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 
@@ -107,7 +181,7 @@ body{
    background-color:  rgb(26, 24, 24);
    color: #fff;
    grid-template-areas:'members socialNet';
-   margin-top: 63vh;
+   margin-top: 35vh;
   }
 
   .members ul {

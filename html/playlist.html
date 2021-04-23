@@ -5,14 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/playlist.css">
-  <link rel="stylesheet" href="./css/mediaQuerys.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />"
   <title>Kolav</title>
 </head>
 
 <body>
-  <header>
+  <header> <!-- Header -->
     <div class="navbar">
       <img class="logo" src="../img/KOLAV-LOGO.png" alt="">
       <ul class="menu" id="menu">
@@ -22,26 +21,46 @@
         <li><a href="genres.html">GENRES</a></li>
         <li><a href="detail-album.html">ALBUMS</a></li>
       </ul>
-      <div class="Busqueda">
-        <button id="EjecutarBusqueda" class="buscadorBoton"><i class="fas fa-search"></i></button>
-        <input class="buscadorFondo" type="text" placeholder="Busca tu Artista "> </input>
 
+      <div class="Busqueda">
+      <form class="Busqueda" action="search-results.html" method=get>
+        <button  class="buscadorBoton"><i class="fas fa-search"></i></button>
+        <input class="buscadorFondo" type="text" placeholder="Busca tu Artista ">
+        </form>
+       <div class="menubars" id="menubar">
+          <i class="fas fa-bars"></i>
+        </div>
+     
       </div>
     </div>
+
     <div class="menubars" id="menubar">
       <i class="fas fa-bars"></i>
     </div>
-
-    </div>
   </header>
   
-  <main>
+  <main> <!-- Main -->
   <h3 class="Subtitle">
       <i class="far fa-play-circle"></i> My Playlist
     </h3>
+    <div class="card">
+        <div class="avatar" style="background-image: url('../img/britney-in-the-zone.jpeg')"></div>
+        <div>
+          <p>Toxic</p>
+          <p id=infosingle>
+           <a class="infosingle" href="detail-artist.html"> Britney Spears</a></p>
+          <p id=infosingle>
+           <a class="infosingle" href="detail-album.html"> In The Zone </a></p>
+          <p id=infosingle>
+           <a href="genres.html" class="infosingle"> Pop </a></p>
+            <audio id=audios scr="audios/britneytoxic.mp3" controls="">
+          </audio>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer class="footer">
+  <footer class="footer"> <!-- Footer -->
     <div class="socialNet">
       <i class="fab fa-facebook"></i>
       <i class="fab fa-instagram"></i>
