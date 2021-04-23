@@ -68,27 +68,6 @@ body {
 }
 
 
-.footer {
-    display: grid;
-    height: 80px;
-    align-items: center;
-    background-color: rgb(26, 24, 24);
-    color: #fff;
-    grid-template-areas: ' members socialNet'; 
-    margin-top: 7vh;
-
-}
-
-.members ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-
-.socialNet {
-    display: flex;
-    justify-content: space-around;
-}
 
 .MainContent {
     display: grid;
@@ -168,4 +147,26 @@ body {
     border-radius: 10px;
 
 
+}
+
+.footer {
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background-color: rgb(26, 24, 24);
+    color: #fff;
+    grid-template-areas: ' members socialNet'; 
+    margin-top: 7vh;
+
+}
+
+.members ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.socialNet {
+    display: flex;
+    justify-content: space-around;
 }
