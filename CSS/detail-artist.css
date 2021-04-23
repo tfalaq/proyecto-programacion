@@ -199,3 +199,42 @@ body {
 }
 
 
+#menucono{
+    display:none;
+}
+
+@media only screen and (max-width:600px){
+    .Busqueda {
+    display: none;
+}
+ 
+    .navbar .menu {
+        display: none;        
+        
+    }
+
+    .Subtitle{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+     .MainContent{
+        grid-template-columns: repeat(1, 1fr); 
+        height: 100vh;    
+    }
+    #menucono{
+        display: block;
+        grid-column: 7/8;
+        cursor: pointer; 
+    }
+   
+
+    .card{
+        width: 300px;
+        height: 200px;
+    }
+    .footer{
+        margin-top: 280vh;
+    }
+
+
+}
