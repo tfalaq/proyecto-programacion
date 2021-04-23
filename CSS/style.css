@@ -192,7 +192,13 @@ font-family: 'Roboto', sans-serif;
 
 }
 
-@media (min-width:768px){
+
+
+@media (max-width:600px){
+    .MainContent{
+        display: grid;
+        grid
+    }
    
 }
 
