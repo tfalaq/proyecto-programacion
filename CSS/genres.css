@@ -42,10 +42,7 @@ body {
     text-shadow: 0 0 3px rgb(190, 156, 61);
 }
 
-.menubars {
-    display: none;
 
-}
 
 .btn {
     font-size: 1em;
@@ -169,4 +166,48 @@ body {
 .socialNet {
     display: flex;
     justify-content: space-around;
+}
+
+#menucono {
+    display: none;
+}
+@media only screen and (max-width:600px){
+    .Busqueda {
+    display: none;
+}
+ 
+    .navbar .menu {
+        display: none;        
+        
+    }
+
+    .Subtitle{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+     .MainContent{
+        grid-template-columns: repeat(1, 1fr); 
+        height: 100vh;    
+    }
+    #menucono{
+        display: block;
+        grid-column: 7/8;
+        cursor: pointer;
+       
+        
+    }
+   
+    .avatar{ 
+     
+    }
+
+    .card{
+        width: 300px;
+        height: 200px;
+    }
+    .footer{
+        margin-top: 90vh;
+    }
+
+
 }
