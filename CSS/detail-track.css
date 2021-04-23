@@ -182,6 +182,9 @@ body{
     border: 1px solid yellow;
     border-radius: 10px;
 }
+#menucono{
+    display: none;
+}
 
 .footer {
     display: grid;
@@ -203,4 +206,42 @@ body{
 .socialNet {
     display: flex;
     justify-content: space-around;
+}
+
+
+@media only screen and (max-width:600px){
+
+    .navbar {
+        position: relative;
+        width: 100vw;
+     
+    }
+
+   
+.Busqueda {
+    display: none;
+}
+ 
+    .navbar .menu {
+        display: none;        
+        
+    }
+
+    .Subtitle{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .MainContent{
+        grid-template-columns: repeat(1, 1fr); 
+        height: 100vh;    
+    }
+    #menucono{
+        display: block;
+        grid-column: 7/8;
+        cursor: pointer;
+       
+        
+    }
+   
 }
