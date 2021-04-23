@@ -18,29 +18,31 @@
     <div class="navbar">
       <img class="logo" src="img/KOLAV-LOGO.png" alt="">
 
-      <ul class="menu" id="menu">
-        <li><a href="./index.html">HOME</a></li>
-        <li><a href="./html/detail-artist.html">ARTISTS</a></li>
-        <li><a href="./html/genres.html">GENRES</a></li>
-        <li><a href="./html/detail-album.html">ALBUMS</a></li>
-      </ul>
-
+    <div class="menubars" id="menubar"></div>
+    <ul class="menu" id="mostrarMenu">
+      <li><a href="./index.html">HOME</a></li>
+      <li><a href="./html/detail-artist.html">ARTISTS</a></li>
+      <li><a href="./html/genres.html">GENRES</a></li>
+      <li><a href="./html/detail-album.html">ALBUMS</a></li>
+    </ul>
+    <div class="menucono" ></div>
+    <i id="menucono" class="fas fa-bars"></i>
+  </div>
      
-      <div class="Busqueda">
+    <div class="Busqueda">
       <form class="Busqueda" action="./html/search-results.html" method=get>
         <button  class="buscadorBoton"><i class="fas fa-search"></i></button>
         <input class="buscadorFondo" type="text" placeholder="Busca tu Artista ">
         </form>
-       <div class="menubars" id="menubar">
-          <i class="fas fa-bars"></i>
-        </div>
+      
      
-      </div>
-
+     
     </div>
 
 
-    </div>
+
+
+  </div>
 
     </div>
   </header>
@@ -54,7 +56,7 @@
     <div class="MainContent">
       <div class="card">
         <div class="avatar" style="background-image: url(./img/dakiti-badbunny.png)"></div>
-        <div>
+        <div class="informacion">
           <p>Dákiti</p>
           <p id=infoalbum>
             Bad Bunny & Jhay Cortez</p>
@@ -68,7 +70,7 @@
       </div>
         <div class="card">
         <div class="avatar" style="background-image: url(./img/toxic-britney.png)"></div>
-        <div>
+        <div class="informacion">
           <p>Toxic</p>
           <p id=infoalbum>
             Britney Spears</p>
@@ -82,7 +84,7 @@
       </div>
         <div class="card">
         <div class="avatar" style="background-image: url(./img/ojosdepapel.png)"></div>
-        <div>
+        <div class="informacion">
           <p>Muchacha</p>
           <p id=infoalbum>
             Luis Alberto Spinetta</p>
@@ -96,7 +98,7 @@
       </div>
         <div class="card">
         <div class="avatar" style="background-image: url(./img/antitaxi-lafemme.png)"></div>
-        <div>
+        <div class="informacion">
           <p>Antitaxi</p>
           <p id=infoalbum>
             La Femme</p>
@@ -107,7 +109,7 @@
         </div>
 
 
-      </div>
+      </div class="informacion">
         <div class="card">
         <div class="avatar" style="background-image: url(./img/talvezchita.png)"></div>
         <div>
@@ -121,10 +123,10 @@
         </div>
 
 
-      </div>
+      </div >
         <div class="card">
         <div class="avatar" style="background-image: url(./img/hi-ctaichu.png)"></div>
-        <div>
+        <div class="informacion">
           <p>HI-C</p>
           <p id=infoalbum>
             Taichu x Moloko </p>
@@ -138,7 +140,7 @@
       </div>
         <div class="card">
         <div class="avatar" style="background-image: url(./img/the-look.png)"></div>
-        <div>
+        <div class="informacion">
           <p>The Look</p>
           <p id=infoalbum>
             Metronomy</p>
@@ -152,7 +154,7 @@
       </div>
       <div class="card">
         <div class="avatar" style="background-image: url(./img/shade.png)"></div>
-        <div>
+        <div class="informacion">
           <p>Shade</p>
           <p id=infoalbum>
             IAMDDB</p>
@@ -173,7 +175,7 @@
       
       <div class="card">
         <div class="avatar" style="background-image: url('./img/britney-spears.jpeg')"></div>
-        <div>
+        <div class="informacion">
           <p>Britney Spears</p>
           <p id=infoalbum>
             Pop</p>
@@ -186,7 +188,7 @@
 
       <div class="card">
         <div class="avatar" style="background-image: url('./img/chita-.jpeg')"></div>
-        <div>
+        <div class="informacion">
           <p>Chita</p>
           <p id=infoalbum>
             Trap</p>
@@ -199,7 +201,7 @@
 
       <div class="card">
         <div class="avatar" style="background-image: url('./img/sodastereo.png')"></div>
-        <div>
+        <div class="informacion">
           <p>Soda Stereo</p>
           <p id=infoalbum>
             Rock Nacional</p>
@@ -212,7 +214,7 @@
 
       <div class="card">
         <div class="avatar" style="background-image: url('./img/taichu.png')"></div>
-        <div>
+        <div class="informacion">
           <p>Taichu</p>
           <p id=infoalbum>
             Trap</p>
@@ -223,7 +225,7 @@
       </div>
       <div class="card">
         <div class="avatar" style="background-image: url('img/badbunny.jpeg')"></div>
-        <div>
+        <div class="informacion">
           <p>Bad Bunny</p>
           <p id=infoalbum>
             Trap</p>
@@ -235,7 +237,7 @@
 
       <div class="card">
         <div class="avatar" style="background-image: url('./img/maluma.png')"></div>
-        <div>
+        <div class="informacion">
           <p>Maluma</p>
           <p id=infoalbum>
             Reggeaton</p>
@@ -248,7 +250,7 @@
 
       <div class="card">
         <div class="avatar" style="background-image: url('./img/pinkfloyd.png')"></div>
-        <div>
+        <div class="informacion">
           <p>Pink Floyd</p>
           <p id=infoalbum>
             Rock</p>
@@ -261,7 +263,7 @@
 
       <div class="card">
         <div class="avatar" style="background-image: url('./img/spinneto.png')"></div>
-        <div>
+        <div class="informacion">
           <p>Spinetta</p>
           <p id=infoalbum>
             Rock Nacional</p>
@@ -281,7 +283,7 @@
     <div class="MainContent">
       <div class="card">
         <div class="avatar" style="background-image: url('./img/bad.jfif')"></div>
-        <div>
+        <div class="informacion">
           <p>YHLQMDLG</p>
           <p id=infoalbum>
             Bad Bunny </p>
@@ -296,7 +298,7 @@
 
       <div class="card">
         <div class="avatar" style="background-image: url('./img/britney-spears.jpeg')"></div>
-        <div>
+        <div class="informacion">
           <p>In the zone</p>
           <p id=infoalbum>
             Britney Spears </p>
@@ -311,7 +313,7 @@
 
       <div class="card">
         <div class="avatar" style="background-image: url('./img/chita-.jpeg')"></div>
-        <div>
+        <div class="informacion">
           <p>Encanto</p>
           <p id=infoalbum>
             Chita </p>
@@ -326,7 +328,7 @@
 
       <div class="card">
         <div class="avatar" style="background-image: url('./img/sodastereo.png')"></div>
-        <div>
+        <div class="informacion">
           <p>Me veras volver</p>
           <p id=infoalbum>
             Soda Stereo </p>
@@ -341,7 +343,7 @@
 
       <div class="card">
         <div class="avatar" style="background-image: url('./img/taichu.png')"></div>
-        <div>
+        <div class="informacion">
           <p>Cheese</p>
           <p id=infoalbum>
             Taichu </p>
@@ -356,7 +358,7 @@
 
       <div class="card">
         <div class="avatar" style="background-image: url('./img/maluma.png')"></div>
-        <div>
+        <div class="informacion">
           <p>Pretty boy Dirty boy</p>
           <p id=infoalbum>
             Maluma </p>
@@ -371,7 +373,7 @@
 
       <div class="card">
         <div class="avatar" style="background-image: url('./img/pinkfloyd.png')"></div>
-        <div>
+        <div class="informacion">
           <p>Dark side of the moon</p>
           <p id=infoalbum>
             Pink Floyd </p>
@@ -386,7 +388,7 @@
       
       <div class="card">
         <div class="avatar" style="background-image: url('./img/spinneto.png')"></div>
-        <div>
+        <div class="informacion">
           <p>Pescado rabioso</p>
           <p id=infoalbum>
             Luis Alberto Spinetta </p>
