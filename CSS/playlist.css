@@ -10,6 +10,7 @@ body{
     background-color: rgba(0, 0, 0.918);
 }
 .navbar {
+    margin-top: 15px;
     background: rgb(190, 156, 61);
     display: grid;
     grid-template-columns: repeat(8, 1fr);

@@ -163,14 +163,15 @@ font-family: 'Roboto', sans-serif;
     grid-column: 8/9;
     font-size: 1em;
     cursor: pointer;
-    display: block;
+    display: flex;
+    justify-content: space-around;
     
     
 
 }
 
 .buscadorBoton {
-    grid-column: 7/8;
+    display: block;
     font-size: 1, 5em;
     background: none;
     color: white;
@@ -205,4 +206,3 @@ font-family: 'Roboto', sans-serif;
 @media (min-width:1024px){
    
 }
-

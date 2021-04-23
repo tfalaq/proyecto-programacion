@@ -140,9 +140,9 @@ body {
 }
 
 .Busqueda {
+    display: flex;
     grid-column: 8/9;
     font-size: 2em;
-    display: flex;
     cursor: pointer;
     justify-content: space-around;
 

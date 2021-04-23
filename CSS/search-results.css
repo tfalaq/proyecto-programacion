@@ -65,10 +65,10 @@ body{
 
     display: grid;
     gap: 2em;
-    grid-template-columns: repeat(1, 2fr);
-    height: 30vh;
-    margin: 20vh;
-    padding: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    height: 10vh;
+    margin: 10px;
+    
 }
 
 .card {
@@ -78,6 +78,7 @@ body{
     position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .card p {

@@ -86,13 +86,8 @@ body{
     height: 20vh;
     margin: 10px;
 }
-#contenedor-reggeton{
-    display: grid;
-    gap: 3em;
-    grid-template-columns: repeat(4, 1fr);
-    height: 20vh;
-    margin: 10px;
-}
+
+
 
 .card{ 
     background-image: url(https://wallpaperaccess.com/full/304200.jpg);
