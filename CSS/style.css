@@ -167,6 +167,9 @@ font-family: 'Roboto', sans-serif;
     justify-content: space-around;
 
 }
+
+
+
 .buscadorBoton {
     display: block;
     font-size: 1, 5em;
@@ -192,12 +195,6 @@ font-family: 'Roboto', sans-serif;
 
 
 @media only screen and (max-width:600px) {
-    .navbar {
-        position: relative;
-        width: 100vw;
-     
-    }
-
    
 .Busqueda {
     display: none;
@@ -224,9 +221,8 @@ font-family: 'Roboto', sans-serif;
         transform: translateX(185%);
     }
 
-    .navbar .menu-toggle{
-        transform: translateX(50%);
-    }
+    
+    
     .MainContent{
         grid-template-columns: repeat(1, 1fr); 
         height: 100vh;    
