@@ -138,6 +138,36 @@ body {
 
 }
 
+#addplaylist{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(161, 153, 142);
+  font-size: 100%;
+  text-align: left;
+    word-wrap: break-word;
+     margin-left: 20px;
+     text-decoration: none;
+}
+#audios{
+    height: 5vh ;
+    margin: 10px;
+    
+}
+
+.formap{
+    font-family: 'Roboto';
+    font-size: 60%;
+    text-decoration: none;
+    color:white;
+    padding: 2px 5px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-top: 10px;
+    }
+
+
+
 .card .btn {
     margin-left: 20px;
     margin-top: 20px;
