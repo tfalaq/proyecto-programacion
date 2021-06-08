@@ -97,6 +97,14 @@ body {
     margin: 15px;
 }
 
+.MainContentGenre{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50vh;
+    margin: 20px;
+}
+
 .card {
     background-image: url(https://wallpaperaccess.com/full/304200.jpg);
     background-color: rgba(39, 39, 39, 0.514);
