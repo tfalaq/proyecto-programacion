@@ -123,6 +123,7 @@ body {
   font-size: 105%;
   text-align: left;
     word-wrap: break-word;
+    text-decoration: none;
 }
 
 
@@ -180,6 +181,7 @@ font-family: 'Roboto', sans-serif;
   font-size: 100%;
   text-align: left;
     word-wrap: break-word;
+  text-decoration: none;
 }
 
 .Subtitle {
