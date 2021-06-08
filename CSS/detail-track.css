@@ -95,8 +95,10 @@ body{
       text-align: left;
         word-wrap: break-word;
          margin-left: 20px;
+         text-decoration: none;
          
          }
+
 #addplaylist{
     font-family: 'Roboto', sans-serif;
     color: rgb(161, 153, 142);

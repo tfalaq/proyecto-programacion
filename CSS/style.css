@@ -108,7 +108,7 @@ body {
 
 }
 
-.card p {
+.card p, h1 {
     font-family: 'Roboto', sans-serif;
     margin-left: 20px;
     color: rgb(250, 250, 65);
@@ -174,7 +174,7 @@ body {
     margin-top: 20px;
 }
 
-#infosingle{
+#infosingle {
 font-family: 'Roboto', sans-serif;
     margin-left: 20px;
     color: rgb(156, 112, 45);
