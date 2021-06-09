@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <title>Kolav</title>
+
+    <script type="text/javascript" src="./JS/index.js"></script>
+  
+    <title>Kolav</title>
 </head>
 
 <body>
@@ -42,377 +45,45 @@
       <h1 class="Subtitle">
         <i class="far fa-play-circle"></i> Top tracks
       </h1>
-      <article class="card">
-        <div class="avatar" style="background-image: url(./img/dakiti-badbunny.png)"></div>
-        <div class="informacion">
-          <h1>Dákiti</h1>
-          <h2 id=infoalbum>
-            Bad Bunny & Jhay Cortez</h2>
-          <h3 id=infosingle>
-            Año:2020 <h3>
-              <form method="get" action="./detail-track.html">
-              <button class="btn" type="submit">Play</button>
-        </div>
-     </article>
+      <div id ="topTracks">
       
-      <article class="card">
-        <div class="avatar" style="background-image: url(./img/toxic-britney.png)"></div>
-        <div class="informacion">
-          <h1>Toxic</h1>
-          <h2 id=infoalbum>
-            Britney Spears</h2>
-          <h3 id=infosingle>
-            Año:2009 </h3>
-          <form method="get" action="./detail-track.html">
-            <button class="btn" type="submit">Play</button>
-        </div>
-      </article>
+       <!-- Top Tracks are loaded form api -->
 
-        <article class="card">
-         
-            <div class="avatar" style="background-image: url(./img/ojosdepapel.png)"></div>
-            <div class="informacion">
-              <h1>Muchacha</h1>
-              <h2 id=infoalbum>
-                Luis Alberto Spinetta</h2>
-              <h3 id=infosingle>
-                Año:1999 </h3>
-              <form method="get" action="./detail-track.html">
-                <button class="btn" type="submit">Play</button>
-            </div>
-         
-        </article>
-
-        <article class="card">
-          
-            <div class="avatar" style="background-image: url(./img/antitaxi-lafemme.png)"></div>
-            <div class="informacion">
-              <h1>Antitaxi</h1>
-              <h2 id=infoalbum>
-                La Femme</h2>
-              <h3 id=infosingle>
-                Año:2015 </h3>
-              <form method="get" action="./detail-track.html">
-                <button class="btn" type="submit">Play</button>
-            </div>
-
-          
-          
-        </article>
-
-        <article class="card">
-          
-            <div class="avatar" style="background-image: url(./img/talvezchita.png)"></div>
-            <div class="informacion">
-              <h1>Tal vez</h1>
-              <h2 id=infoalbum>
-                Chita</h2>
-              <h3 id=infosingle>
-                Año:2019 </h3>
-              <form method="get" action="./detail-track.html">
-                <button class="btn" type="submit">Play</button>
-            </div>
-          
-        </article>
-
-        <article class="card">
-          
-            <div class="avatar" style="background-image: url(./img/hi-ctaichu.png)"></div>
-            <div class="informacion">
-              <h1>HI-C</h1>
-              <h2 id=infoalbum>
-                Taichu x Moloko </h2>
-              <h3 id=infosingle>
-                Año:2019 </h3>
-              <form method="get" action="./detail-track.html">
-                <button class="btn" type="submit">Play</button>
-            </div>
-          
-        </article>
-
-        <article class="card">
-          
-            <div class="avatar" style="background-image: url(./img/the-look.png)"></div>
-            <div class="informacion">
-              <h1>The Look</h1>
-              <h2 id=infoalbum>
-                Metronomy</h2>
-              <h3 id=infosingle>
-                Año:2011 </h3>
-              <form method="get" action="./detail-track.html">
-                <button class="btn" type="submit">Play</button>
-            </div>
-        
-        </article>
-
-        <article class="card">
-          
-            <div class="avatar" style="background-image: url(./img/shade.png)"></div>
-            <div class="informacion">
-              <h1>Shade</h1>
-              <h2 id=infoalbum>
-                IAMDDB</h2>
-              <h3 id=infosingle>
-                Año:2017 </h3>
-              <form method="get" action="./detail-track.html">
-                <button class="btn" type="submit">Play</button>
-            </div>
-          
-        </article>
-
+      
+      </div>
      
           <h3 class="Subtitle">
             <i class="far fa-star"></i> Top Artist
           </h3>
      
+          <div id ="topArtists">
+      
+            <!-- Top Artists are loaded form api -->
+     
+           
+           </div>
 
-        <article class="card">
-
-
-          <div class="avatar" style="background-image: url('./img/britney-spears.jpeg')"></div>
-          <div class="informacion">
-            <h1>Britney Spears</h1>
-            <h2 id=infoalbum>
-              Pop</h2>
-            <form method="get" action="./detail-artist.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <div class="avatar" style="background-image: url('./img/chita-.jpeg')"></div>
-          <div class="informacion">
-            <h1>Chita</h1>
-            <h2 id=infoalbum>
-              Trap</h2>
-            <form method="get" action="./detail-artist.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <div class="avatar" style="background-image: url('./img/sodastereo.png')"></div>
-          <div class="informacion">
-            <h1>Soda Stereo</h1>
-            <h2 id=infoalbum>
-              Rock Nacional</h2>
-            <form method="get" action="./detail-artist.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <div class="avatar" style="background-image: url('./img/taichu.png')"></div>
-          <div class="informacion">
-            <h1>Taichu</h1>
-            <h2 id=infoalbum>
-              Trap</h2>
-            <form method="get" action="/detail-album.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <div class="avatar" style="background-image: url('img/badbunny.jpeg')"></div>
-          <div class="informacion">
-            <h1>Bad Bunny</h1>
-            <h2 id=infoalbum>
-              Trap</h2>
-            <form method="get" action="./detail-artist.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="avatar" style="background-image: url('./img/maluma.png')"></div>
-          <div class="informacion">
-            <h1>Maluma</h1>
-            <h2 id=infoalbum>
-              Reggeaton</h2>
-            <form method="get" action="./detail-artist.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <div class="avatar" style="background-image: url('./img/pinkfloyd.png')"></div>
-          <div class="informacion">
-            <h1>Pink Floyd</h1>
-            <h2 id=infoalbum>
-              Rock</h2>
-            <form method="get" action="./detail-artist.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <div class="avatar" style="background-image: url('./img/spinneto.png')"></div>
-          <div class="informacion">
-            <h1>Spinetta</h1>
-            <h2 id=infoalbum>
-              Rock Nacional</h2>
-            <form method="get" action="./detail-artist.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
+         
+   
 
         <article class="Maintcontant">
           <h1 class="Subtitle">
             <i class="fas fa-compact-disc"></i> Top Albums
           </h1>
-        </article>
 
-        <article class="card">
-          <div class="avatar" style="background-image: url('./img/bad.jfif')"></div>
-          <div class="informacion">
-            <h1>YHLQMDLG</h1>
-            <h2 id=infoalbum>
-              Bad Bunny </h2>
-            <h3 id=infosingle>
-              Año:2020 </h3>
-            <form method="get" action="detail-album.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
+          <div id ="topAlbums">
+      
+            <!-- Top Albums are loaded form api -->
+     
+           
+           </div>
+
+
+
 
         </article>
 
-        <article class="card">
 
-          <div class="avatar" style="background-image: url('./img/britney-spears.jpeg')"></div>
-          <div class="informacion">
-            <h1>In the zone</h1>
-            <h2 id=infoalbum>
-              Britney Spears </h2>
-            <h3 id=infosingle>
-              Año:2003 </h3>
-            <form method="get" action="detail-album.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <div class="avatar" style="background-image: url('./img/chita-.jpeg')"></div>
-          <div class="informacion">
-            <h1>Encanto</h1>
-            <h2 id=infoalbum>
-              Chita </h2>
-            <h3 id=infosingle>
-              Año:2019 </h3>
-            <form method="get" action="detail-album.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <div class="avatar" style="background-image: url('./img/sodastereo.png')"></div>
-          <div class="informacion">
-            <h1>Me veras volver</h1>
-            <h2 id=infoalbum>
-              Soda Stereo </h2>
-            <h3 id=infosingle>
-              Año:2008 </h3>
-            <form method="get" action="detail-album.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <div class="avatar" style="background-image: url('./img/taichu.png')"></div>
-          <div class="informacion">
-            <h1>Cheese</h1>
-            <h2 id=infoalbum>
-              Taichu </h2>
-            <h3 id=infosingle>
-              Año:2020 </h3>
-            <form method="get" action="detail-album.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <div class="avatar" style="background-image: url('./img/maluma.png')"></div>
-          <div class="informacion">
-            <h1>Pretty boy Dirty boy</h1>
-            <h2 id=infoalbum>
-              Maluma </h2>
-            <h3 id=infosingle>
-              Año:2015 </h3>
-            <form method="get" action="detail-album.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <div class="avatar" style="background-image: url('./img/pinkfloyd.png')"></div>
-          <div class="informacion">
-            <h1>Dark side of the moon</h1>
-            <h2 id=infoalbum>
-              Pink Floyd </h2>
-            <h3 id=infosingle>
-              Año:1973 </h3>
-            <form method="get" action="detail-album.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <div class="avatar" style="background-image: url('./img/spinneto.png')"></div>
-          <div class="informacion">
-            <h1>Pescado rabioso</h1>
-            <h2 id=infoalbum>
-              Luis Alberto Spinetta </h2>
-            <h3 id=infosingle>
-              Año: 1973 </h3>
-            <form method="get" action="detail-album.html">
-              <button class="btn" type="submit">Ver más</button>
-            </form>
-          </div>
-
-        </article>
     </section>
   </main>
 
