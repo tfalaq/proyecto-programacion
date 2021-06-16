@@ -293,6 +293,65 @@ font-family: 'Roboto', sans-serif;
     .informacion .btn{
         margin: 10px;
     }
+
+
+    .container-details{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .card-Artist {
+        cursor: pointer;
+        transition: 0.5s;
+        width: 40%;
+        height: 65vh;
+        border-radius: 5px;
+        color:white;
+        margin: 5px;
+        max-width: 30%;
+        background-color: rgba(255, 230, 0, 0.219);
+      }
+      
+      .card-Artist:hover {
+        -webkit-box-shadow: 10px 10px 21px -1px rgba(181,139,14,1);
+        -moz-box-shadow: 10px 10px 21px -1px rgba(181,139,14,1);
+        box-shadow: 10px 10px 21px -1px rgba(181,139,14,1);
+      }
+      
+      .card-Artist img {
+        display: block;
+        border-radius: 5px 5px 0 0;
+        height:90%;
+      }
+      
+     .Subtitle-detail{
+         text-align: center;
+         font-size:2em;
+         line-height:1.5;
+     }
+    
+     .info{
+         
+          min-height: 30vh;
+          min-width: 60vh;
+         
+     }
+    
+     .details{
+         display:flex;
+         width: 100%;
+         padding:5px;
+         height:10vh;
+         align-items:center;
+         justify-content: space-between;
+         margin: 5px;
+     }
+    
+     .details img{
+       height:100%;
+     }
+
     .footer{
         position: fixed;
         bottom: 0;
