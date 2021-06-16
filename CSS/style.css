@@ -1,3 +1,4 @@
+  
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
@@ -14,12 +15,12 @@ body {
 }
 
 .navbar {
-    margin-top: 15px;
     background: rgb(190, 156, 61);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     align-items: center;
     padding: 1%;
+    margin-bottom: 20px;
 
 }
 
@@ -113,6 +114,9 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+    margin:auto;
+    width: 80%;
+    margin-bottom: 10px;
 
 }
 
@@ -129,8 +133,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin-left: 20px;
     color: rgb(235, 163, 10);
-  font-size: 105%;
-  text-align: left;
+    font-size: 105%;
+    text-align: left;
     word-wrap: break-word;
     text-decoration: none;
 }
@@ -144,15 +148,15 @@ body {
     border-radius: 50%;
     margin: auto;
     top: 25%;
-    left: 65%;
+    right: 5%;
 
 }
 
 #addplaylist{
     font-family: 'Roboto', sans-serif;
     color: rgb(161, 153, 142);
-  font-size: 100%;
-  text-align: left;
+    font-size: 100%;
+    text-align: left;
     word-wrap: break-word;
      margin-left: 20px;
      text-decoration: none;
@@ -179,8 +183,7 @@ body {
 
 
 .card .btn {
-    margin-left: 20px;
-    margin-top: 20px;
+margin: 20px;
 }
 
 #infosingle {
