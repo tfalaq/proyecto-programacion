@@ -31,9 +31,8 @@
              <article class="card">
                          <div class="informacion details">
                          <h1>Cantidad de Albums : ${artista.nb_album}</h1>
-                         <h1>Fans : ${artista.nb_album}</h1>
-                         <h1> Type : ${artista.nb_album}</h1>
-                         <h1>Cantidad de Albums : ${artista.nb_album}</h1>
+                         <h1>Fans : ${artista.nb_fan}</h1>
+                         <h1> Type : ${artista.type}</h1>
                          <img src="${artista.picture_big}" alt="" srcset="">
                          </div>
              </article>`
