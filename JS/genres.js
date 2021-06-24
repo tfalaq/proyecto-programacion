@@ -18,7 +18,7 @@ window.addEventListener('load', function(){
                             <img  src="${result.data[res].picture}">
                             </div>
                       </article>
-                    `
+                    
                     }
     
                    
