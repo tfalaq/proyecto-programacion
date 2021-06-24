@@ -21,6 +21,7 @@ window.addEventListener('load', function () {
                     .then(result => {
 
                         for (res in result.data) {
+                            let documento=documentc
                             document.querySelector('.MainContent').innerHTML += `
                             
                             <article class="card">
