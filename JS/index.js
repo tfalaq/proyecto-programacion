@@ -1,10 +1,10 @@
-var topTracksUrl ='https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks';
-var topArtistUrl ='https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists';
-var topAlbumnUrl ='https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums';
+let topTracksUrl ='https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks';
+let topArtistUrl ='https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists';
+let topAlbumnUrl ='https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums';
 
-var topTrackslocal='js/topTrack.json';
-var topArtistlocal='js/topArtist.json';
-var topAlbumnlocal='js/topAlbum.json';
+let topTrackslocal='js/topTrack.json';
+let topArtistlocal='js/topArtist.json';
+let topAlbumnlocal='js/topAlbum.json';
 
 
 async function getTopTracks() {
