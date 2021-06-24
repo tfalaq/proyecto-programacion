@@ -1,113 +1,136 @@
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0")
-  .then(function (response) {
-    return response.json()
-  }).then(function (data) {
-    console.log(data);
+window.addEventListener('load', async function () {
+  let topTracksUrl = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks';
+  let topArtistUrl = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists';
+  let topAlbumnUrl = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums';
 
+  let topTrackslocal = 'js/topTrack.json';
+  let topArtistlocal = 'js/topArtist.json';
+  let topAlbumnlocal = 'js/topAlbum.json';
 
-
-    let tracks = data.tracks.data
-    let contenedorTracks = document.querySelector("#topTracks");
-
-    for (const track of tracks) {
-
-      // contenedorTracks.innerHTML += `
-      
-      //   <div class="avatar" style="background-image: url(${track.album.cover_small}"></div>
-      //   <div class="informacion">
-      //     <h1>${track.title}</h1>
-      //     <h2 id=infoalbum>
-      //     ${track.artist.name}</h2>
-      //     <h3 id=infosingle>
-      //       Album:${track.album.title} <h3>
-              
-      //         <a class="btn" href="detail-track.html?id=${track.id}"> Play</a>
-      //   </div>
-      //   `;
-        contenedorTracks.innerHTML += `<article class="card">
-        <div class="avatar" style="background-image: url(${track.album.cover_big})"></div>
-        <div class="informacion">
-          <h1>${track.title}</h1>
-          
-          <h3 id=infosingle>
-            Album: ${track.album.title} </h3>
-          
-            </div>
-            <a class="btn" href="detail-track.html?id=${track.id}"> Play</a>
-        
-        </article> `
+  async function RealizarPeticion(url, mensajeError) {
+    try {
+      let response = await fetch(url)
+      let respuesta = await response.json()
+      return respuesta
+    } catch (error) {
+      console.log(`Ocurrio un error en ${mensajeError}, ${error}`);
     }
+  }
 
+  async function loadApis() {
 
-    let artistas = data.artists.data
-    let contenedorArtistas = document.querySelector("#topArtists");
+    let topTracks = await RealizarPeticion(topTracksUrl, 'TopTracks');
+    let topArtists = await RealizarPeticion(topArtistUrl, 'TopArtist');
+    let topAlbums = await RealizarPeticion(topAlbumnUrl, 'TopAlbums');
 
+    createTopTracks(topTracks);
+    createTopArtists(topArtists);
+    createTopAlbums(topAlbums);
 
-    for (const artista of artistas) {
+  }
 
-      // contenedorArtistas.innerHTML += `<div class="avatar" style="background-image: url(${artista.picture_big})"></div>
-      //   <div class="informacion">
-      //     <h1>${artista.name}</h1>
-      //     <h2 id=infoalbum>
-      //       Posición ${artista.position}</h2>
-           
-      //      <a class="btn" href="detail-artist.html?id=${artista.id}"> Play</a>
+  function createTopTracks(track) {
 
-      //   </div>
-      //   `;
-      contenedorArtistas.innerHTML += `<article class="card">
-        <div class="avatar" style="background-image: url(${artista.picture_big})"></div>
+    track.data.map(item => {
+      const article = document.createElement('article');
+      article.className = 'card';
+      article.innerHTML = `
+        <div class="avatar" style="background-image: url(${item.album.cover_small}"></div>
         <div class="informacion">
-          <h1>${artista.name}</h1>
-          
-          <h3 id=infosingle>
-            Type:${artista.type} </h3>
-         
-            
-            </div>
-            <a class="btn" href="detail-artist.html?id=${artista.id}"> Ver Más</a>
-        
-        </article> `
-
-    }
-
-
-
-    let albums = data.albums.data
-    let contenedorAlbumes = document.querySelector("#topAlbums");
-
-    for (const album of albums) {
-
-      // contenedorAlbumes.innerHTML += `<div class="avatar" style="background-image: url(${album.cover_big})"></div>
-      // <div class="informacion">
-      //   <h1>${album.title}</h1>
-      //   <h2 id=infoalbum>
-      //     ${album.artist.name}</h2>
-      //   <h3 id=infosingle>
-      //      Posición ${album.position} </h3>
-
-      //   <a class="btn" href="detail-album.html?id=${album.id}"> Play</a>
-
-      // </div>`;
-
-
-      contenedorAlbumes.innerHTML += `<article class="card">
-        <div class="avatar" style="background-image: url(${album.cover_big})"></div>
-        <div class="informacion">
-          <h1>${album.title}</h1>
+          <h1>${item.title}</h1>
           <h2 id=infoalbum>
-            ${album.artist.name} </h2>
+          ${item.artist.name}</h2>
           <h3 id=infosingle>
-            Type:${album.type} </h3>
-         
+            Album:${item.album.title} <h3>
+              <form method="get" action="./detail-track.html">
+              <button class="btn" type="submit">Play</button>
         </div>
-        <a class="btn" href="detail-album.html?id=${album.id}"> Ver Más</a>
-        
-        </article> `
+        `;
 
+      document.getElementById('topTracks').appendChild(article);
+
+
+    })
+
+  }
+
+
+  function createTopArtists(data) {
+    for (let i = 0; i < data.data.length; i++) {
+      let id = data.data[i].id
+      //let title = data.data[i].picture;
+      let image = data.data[i].picture_small;
+      let artistName = data.data[i].name;
+      let position = data.data[i].position;
+      //console.log("title" + title + "cover" + cover + "artistName"+ artistName+ "album" + album);
+      //${icon}
+      const article = document.createElement('article');
+      article.className = 'card';
+      article.innerHTML = `<div class="avatar" style="background-image: url(${image})"></div>
+        <div class="informacion">
+          <h1>${artistName}</h1>
+          <h2 id=infoalbum>
+            Posición ${position}</h2>
+           <button name='artista' value='./detail-artist.html?id=${id}' class="btn">Ver más</a>
+        </div>
+        `;
+      document.getElementById('topArtists').appendChild(article);
+    }
+
+  }
+
+
+  function createTopAlbums(data) {
+    for (let i = 0; i < data.data.length; i++) {
+
+      //let title = data.data[i].picture;
+      let image = data.data[i].cover_small;
+      let album = data.data[i].title;
+      let artist = data.data[i].artist.name;
+      let position = data.data[i].position;
+      //console.log("title" + title + "cover" + cover + "artistName"+ artistName+ "album" + album);
+      //${icon}
+      const article = document.createElement('article');
+      article.className = 'card';
+      article.innerHTML = `<div class="avatar" style="background-image: url(${image})"></div>
+        <div class="informacion">
+          <h1>${album}</h1>
+          <h2 id=infoalbum>
+            ${artist}</h2>
+          <h3 id=infosingle>
+             Posición ${position} </h3>
+          <form method="get" action="detail-album.html">
+            <button class="btn" type="submit">Ver más</button>
+          </form>
+        </div>`;
+      document.getElementById('topAlbums').appendChild(article);
 
     }
+    /* <article class="card">
+    <div class="avatar" style="background-image: url(${image})"></div>
+    <div class="informacion">
+      <h1>${album}</h1>
+      <h2 id=infoalbum>
+        {artist} </h2>
+      <h3 id=infosingle>
+        Año:2020 </h3>
+      <form method="get" action="detail-album.html">
+        <button class="btn" type="submit">Ver más</button>
+      </form>
+    </div>
+    
+    </article> */
+
+  }
+
+
+  await loadApis();
+
+  document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('btn'))
+          location.href = e.target.value
   })
-  .catch(function (error) {
-    console.error(error)
-  })
+
+
+
+})

@@ -1,67 +1,47 @@
-//obtengo el query string
-let queryString = window.location.search
+window.addEventListener('load', function () {
 
-//paso de ese texto a un objeto
-let objetoQuery = new URLSearchParams(queryString);
+    function leerQueryString() {
+        //obtiene la queryString Completa
+        const querystring = window.location.search
+        //convierte la query string en objeto
+        const params = new URLSearchParams(querystring)
+        let id = params.get('Id')
+        return id
+    }
 
-//ahora si obtengo el id del album
-var generoId = objetoQuery.get('id');
+    function cargarArtistas() {
+
+        fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${leerQueryString()}`)
+            .then(res => res.json())
+            .then(res => {
+                console.log(res.name);
+                document.querySelector('.fa-crown').innerHTML = res.name
+                fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${leerQueryString()}/artists`)
+                    .then(response => response.json())
+                    .then(result => {
+
+                        for (res in result.data) {
+                            document.querySelector('.MainContent').innerHTML += `
+                            
+                            <article class="card">
+                              <div class="informacion details">
+                                <h1>${result.data[res].name}</h1>
+                                <a href="./detail-artist.html?id=${result.data[res].id}"   class="btn">ver mas</a>
+                                <img src="${result.data[res].picture}">
+                              </div>
+                            </article>
+                        
+                            `
+                        }
 
 
 
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+ generoId)
-.then(function(response){
-    return response.json()
-})
-.then(function(data){
+                    })
+            })
 
-    console.log(data);
-let subtitulo = document.querySelector(".Subtitle")
+            .catch(error => console.log('error', error));
+    }
 
-   subtitulo.innerHTML=`
-   ${data.name}
-   `
-    
-}).catch(function(error){
-    console.error(error)
-})
+    cargarArtistas()
 
-
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+generoId+"/artists")
-.then(function(response){
-    return response.json()
-})
-.then(function(data){
-
-    console.log(data);
-    
-
-    let artistaGenero = data.data
-    
-    let contenedorArtistas = document.querySelector(".MainContent")
-    
-    
-   for (let i = 0; i < 10 ; i++) {
-       const artista = artistaGenero[i];
-      
-       contenedorArtistas.innerHTML += `<article class="card">
-        <div class="avatar" style="background-image: url(${artista.picture_big})"></div>
-        <div class="informacion">
-          <h1>${artista.name}</h1>
-          
-          <h3 id=infosingle>
-            Type:${artista.type} </h3>
-         
-            
-            </div>
-            <a class="btn" href="detail-artist.html?id=${artista.id}"> Ver Más</a>
-        
-        </article> `
-       
-       
-       
-   }
-    
-}).catch(function(error){
-    console.error(error)
 })
