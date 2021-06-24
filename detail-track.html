@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../proyecto-programacion/css/style.css">
+  <link rel="stylesheet" href="./CSS/detail-track.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />"
   <title>Kolav</title>
@@ -13,7 +13,7 @@
 <body>
   <header> <!-- Header -->
     <div class="navbar">
-      <img class="logo" src="../img/KOLAV-LOGO.png" alt="">
+      <img class="logo" src="./img/KOLAV-LOGO.png" alt="">
       <ul class="menu" id="menu">
         <li><a href="index.html">HOME</a></li>
         <li><a href="detail-artist.html">ARTISTS</a></li>
@@ -21,9 +21,9 @@
         <li><a href="detail-album.html">ALBUMS</a></li>
       </ul>
       <div class="Busqueda">
-        <form class="Busqueda" action="search-results.html" method="GET">
+        <form class="Busqueda" action="search-results.html" method=get>
           <button id="EjecutarBusqueda" class="buscadorBoton" type="submit" ><i class="fas fa-search"></i></button>
-          <input class="buscadorFondo" type="text" placeholder="Busca tu Artista "> 
+          <input class="buscadorFondo" type="text" placeholder="Busca tu Artista " name="search"> 
         </form>
       </div>
       <div class="menucono" ></div>
@@ -37,10 +37,10 @@
   <main> <!-- Main -->
 
     <h3 class="Subtitle">
-      <i class="far fa-play-circle"></i> Top tracks
     </h3>
     <section class="MainContent">  
     
+<!-- 
     <article>
     <div >
       <div class="card">
@@ -96,12 +96,14 @@
           <audio id=audios scr="" controls="audios/muchacha-almendra.mp3"> </audio>
         </div>
       </div>
-    </article>
+    </article> -->
 
     </section>
+    <div class="reproductor"></div>
   </main>
 
   <footer class="footer"> <!-- Footer -->
+
     <div class="socialNet">
       <i class="fab fa-facebook"></i>
       <i class="fab fa-instagram"></i>
@@ -117,6 +119,7 @@
       </ul>
     </div>
   </footer>
+  
   <script src="./JS/detail-track.js"></script>
 </body>
 </html>
