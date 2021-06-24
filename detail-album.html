@@ -16,25 +16,25 @@
 <body>
   <header>
     <div class="navbar">
-      <img class="logo" src="../img/KOLAV-LOGO.png" alt="">
+      <img class="logo" src="./img/KOLAV-LOGO.png" alt="">
 
       <ul class="menu">
-        <li><a href="../index.html">HOME</a></li>
+        <li><a href="index.html">HOME</a></li>
         <li><a href="detail-artist.html">ARTISTS</a></li>
         <li><a href="genres.html">GENRES</a></li>
         <li><a href="detail-album.html">ALBUMS</a></li>
       </ul>
       <div class="Busqueda">
-      <form class="Busqueda" action="search-results.html" method="GET">
-        <button id="EjecutarBusqueda" class="buscadorBoton" type="submit"><i class="fas fa-search"></i></button>
-        <input class="buscadorFondo" type="text" placeholder="Busca tu Artista " >
+        <form class="Busqueda" action="search-results.html" method=get>
+          <button id="EjecutarBusqueda" class="buscadorBoton"><i class="fas fa-search"></i></button>
+          <input class="buscadorFondo" type="text" placeholder="Busca tu Artista " name="search">
         </form>
       </div>
-        <div class="menubars" id="menucono">
-          <i id="menucono" class="fas fa-bars"></i>
-      
-        </div>
-    </div>   
+      <div class="menubars" id="menucono">
+        <i id="menucono" class="fas fa-bars"></i>
+
+      </div>
+    </div>
   </header>
 
   <!-- Agregamos los albums -->
@@ -43,34 +43,36 @@
       <i class="fas fa-compact-disc"></i>Albums
     </h3>
     <section class="MainContent">
-  <article>
-    <div >
-      <div class="card">
-        <div class="avatar" style="background-image: url('../img/badbunnyalbum.jpeg')"></div>
-        <div>
-          <p>YHLQSMDLG</p>
-          <p id=infoalbum>
-            Bad Bunny</p>
-          <p id=infoalbum>
-            Año:2020 </p>
-            <p id=infoalbum>
-            Reggeaton </p>
-            <ol id=infosingle >
-            <li>Si veo a tu mama</li>
-            <li>La dificil</li> 
-            <li>Pero ya no</li>
-            <li>La santa</li> 
-            <li>Yo perreo sola</li>
-            <li>Bichiyal</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-   </article>
 
+      <article>
+        <div>
+          <div class="card">
+            <div class="avatar" style="background-image: url('./img/badbunnyalbum.jpeg')"></div>
+            <div>
+              <p>YHLQSMDLG</p>
+              <p id=infoalbum>
+                Bad Bunny</p>
+              <p id=infoalbum>
+                Año:2020 </p>
+              <p id=infoalbum>
+                Reggeaton </p>
+              <ol id=infosingle>
+                <li>Si veo a tu mama</li>
+                <li>La dificil</li>
+                <li>Pero ya no</li>
+                <li>La santa</li>
+                <li>Yo perreo sola</li>
+                <li>Bichiyal</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 
    <article>
-      <div class="card">
-        <div class="avatar" style="background-image: url('../img/britney-in-the-zone.jpeg')"></div>
+     <div class="card">
+       <div class="avatar" style="background-image: url('./img/britney-in-the-zone.jpeg')"></div>
         <div>
           <p>In The Zone</p>
           <p id=infoalbum>
@@ -90,10 +92,9 @@
         </div>
       </div>
     </article>
-
     <article>
       <div class="card">
-        <div class="avatar" style="background-image: url('../img/nevermind.jpeg')"></div>
+        <div class="avatar" style="background-image: url('./img/nevermind.jpeg')"></div>
         <div>
           <p>Nevermind</p>
           <p id=infoalbum>
@@ -116,7 +117,7 @@
 
     <article>
       <div class="card">
-        <div class="avatar" style="background-image: url('../img/meverasvolver.jpg')">
+        <div class="avatar" style="background-image: url('./img/meverasvolver.jpg')">
         </div>
         <div>
           <p>Me veras volver</p>
@@ -140,7 +141,7 @@
 
     <article>
       <div class="card">
-        <div class="avatar" style="background-image: url('../img/taichualbum.jpeg')"></div>
+        <div class="avatar" style="background-image: url('./img/taichualbum.jpeg')"></div>
         <div>
           <p>Cheese</p>
           <p id=infoalbum>
@@ -163,7 +164,7 @@
 
     <article>
       <div class="card">
-        <div class="avatar" style="background-image: url('../img/maluma_pretty_boy_dirty_boy-portada.jpeg')"></div>
+        <div class="avatar" style="background-image: url('./img/maluma_pretty_boy_dirty_boy-portada.jpeg')"></div>
         <div>
           <p>Pretty Boy Dirty </p>
           <p id=infoalbum>
@@ -186,7 +187,7 @@
 
     <article>
       <div class="card">
-        <div class="avatar" style="background-image: url('../img/chita-.jpeg')"></div>
+        <div class="avatar" style="background-image: url('./img/chita-.jpeg')"></div>
         <div>
           <p>Encanto</p>
           <p id=infoalbum>
@@ -209,7 +210,7 @@
 
     <article>
       <div class="card">
-        <div class="avatar" style="background-image: url('../img/spinneto.png')"></div>
+        <div class="avatar" style="background-image: url('./img/spinneto.png')"></div>
         <div>
           <p>Pescado Rabioso</p>
           <p id=infoalbum>
@@ -232,7 +233,7 @@
 
     <article>
       <div class="card">
-        <div class="avatar" style="background-image: url('../img/rolling-album.jpeg')"></div>
+        <div class="avatar" style="background-image: url('./img/rolling-album.jpeg')"></div>
         <div>
           <p>Tattoo You</p>
           <p id=infoalbum>
@@ -255,7 +256,7 @@
 
     <article>
       <div class="card">
-        <div class="avatar" style="background-image: url('../img/abbeyroad.jpeg')"></div>
+        <div class="avatar" style="background-image: url('./img/abbeyroad.jpeg')"></div>
         <div>
           <p>Abbey Road</p>
           <p id=infoalbum>
@@ -278,7 +279,7 @@
 
   <article>
       <div class="card">
-        <div class="avatar" style="background-image: url('../img/pinkfloyd.png')"></div>
+        <div class="avatar" style="background-image: url('./img/pinkfloyd.png')"></div>
         <div>
           <p>Pink Floyd</p>
           <p id=infoalbum>
@@ -301,7 +302,7 @@
   </article>
   <article>
       <div class="card">
-        <div class="avatar" style="background-image: url('../img/Fenix-Nicky-Jam.jpeg')"></div>
+        <div class="avatar" style="background-image: url('./img/Fenix-Nicky-Jam.jpeg')"></div>
         <div>
           <p>Fenix</p>
           <p id=infoalbum>
@@ -320,16 +321,19 @@
           </ol>
         </div>
       </div>
-  </article>
+  </article> -->
 
-   </section>
+    </section>
+    
   </main>
-
+<div class="tracks">
+  <h1 >Tracks</h1>
+</div>
 
 
   <!-- Agregamos mismo footer -->
 
-  
+
   <footer class="footer">
     <div class="socialNet">
       <i class="fab fa-facebook"></i>

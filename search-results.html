@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/search-results.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />"
   <title>Kolav</title>
@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="navbar">
-      <img class="logo" src="../img/KOLAV-LOGO.png" alt="">
+      <img class="logo" src="./img/KOLAV-LOGO.png" alt="">
       <ul class="menu" id="menu">
 
         <li><a href="index.html">HOME</a></li>
@@ -22,9 +22,9 @@
         <li><a href="detail-album.html">ALBUMS</a></li>
       </ul>
       <div class="Busqueda">
-      <form class="Busqueda" action="search-results.html" method="GET">
-        <button id="EjecutarBusqueda" type="submit" class="buscadorBoton"><i class="fas fa-search"></i></button>
-        <input class="buscadorFondo" type="text" placeholder="Busca tu Artista "> 
+        <form class="Busqueda" action="search-results.html" method=get>
+          <button id="EjecutarBusqueda" type="submit" class="buscadorBoton"><i class="fas fa-search"></i></button>
+          <input class="buscadorFondo" type="text" placeholder="Busca tu Artista "name="search">
         </form>
 
       </div>
@@ -37,28 +37,17 @@
   </header>
 
   <main>
-  <h3 class="Subtitle">
-      <i class="far fa-play-circle"></i> Resultados
+    <h3 class="Subtitle">
+      <i class="far fa-play-circle"></i> Resultados para: 
     </h3>
-  <article class="card">
-    <div class="card">
-        <div class="avatar" style="background-image: url('../img/britney-in-the-zone.jpeg')"></div>
-        <div>
-          <p>Toxic</p>
-          <p id=infosingle>
-           <a class="infosingle" href="detail-artist.html"> Britney Spears</a></p>
-          <p id=infosingle>
-           <a class="infosingle" href="detail-album.html"> In The Zone </a></p>
-          <p id=infosingle>
-           <a href="genres.html" class="infosingle"> Pop </a></p>
-          <a id=addplaylist href=""> Add to Playlist</a>
-          <p> <a href="playlist.html" class="formap">Mi playlist</a> </p>
-            <audio id=audios scr="audios/britneytoxic.mp3" controls="">
-          </audio>
-        </div>
-      </div>
-    </article>
-      </main>
+    <div class="loader"></div>
+    <div id ="topTracks">
+      
+      <!-- Top Tracks are loaded form api -->
+
+     
+     </div>
+  </main>
 
   <footer class="footer">
     <div class="socialNet">
@@ -77,9 +66,6 @@
     </div>
   </footer>
   <script src="./JS/search-results.js"></script>
-  </body>
-  </html>
+</body>
 
-
-
-
+</html>

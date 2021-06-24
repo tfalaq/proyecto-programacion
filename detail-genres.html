@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+  <link rel="stylesheet" href="./CSS/detail-genres.css">
+=======
   <link rel="stylesheet" href="./CSS/style.css">
+>>>>>>> 0411e7c4452608a04a693c089f3450aac968f78d
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />"
   <title>Kolav</title>
@@ -14,7 +18,7 @@
   <header>
   <!-- Header -->
     <div class="navbar">
-      <img class="logo" src="../img/KOLAV-LOGO.png" alt="">
+      <img class="logo" src="./img/KOLAV-LOGO.png" alt="">
       <ul class="menu" id="menu">
         <li><a href="index.html">HOME</a></li>
         <li><a href="detail-artist.html">ARTISTS</a></li>
@@ -22,9 +26,9 @@
         <li><a href="detail-album.html">ALBUMS</a></li>
       </ul>
       <div class="Busqueda">
-        <form class="Busqueda" action="search-results.html" method="GET">
+        <form class="Busqueda" action="search-results.html" method=get>
         <button id="EjecutarBusqueda" type="submit" class="buscadorBoton"><i class="fas fa-search"></i></button>
-        <input class="buscadorFondo" type="text" placeholder="Busca tu Artista "> 
+        <input class="buscadorFondo" type="text" placeholder="Busca tu Artista " name="search"> 
         </form>
 
       </div>
@@ -36,10 +40,11 @@
 
   <main>   <!-- Main -->
     <h3 class="Subtitle">
-      <i class="fas fa-crown"></i> Rock
+
     </h3>
     <section class="MainContent">
-    <article>
+      <h3> Artistas</h3>
+  <!--  <article>
     <div>
       <div class="card">
         <div class="avatar" style="background-image: url('../img/pinkfloyd.png')"></div>
@@ -48,7 +53,7 @@
     </div>
     </article>
 
-    <article>
+     <article>
       <div class="card">
         <div class="avatar" style="background-image: url('../img/thebeattles.jpeg')"></div>
           <h1><a href="detail-artist.html">The Beattles</a></h1>
@@ -67,7 +72,7 @@
         <div class="avatar" style="background-image: url('../img/ledzeppelin.png')"></div>
           <h1><a href="detail-artist.html">Led Zeppelin</a></h1>
       </div>
-  </article>
+  </article> -->
 
     </section>
   </main>
