@@ -1,35 +1,34 @@
 window.addEventListener('load', function(){
 
-
-    window.addEventListener('load', function () {
-
-        function buscarGeneros() {
-            fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre?")
-                .then(response => response.json())
-                .then(result => {
-                   
-                    for (res in result.data) {
-                        console.log(result.data[res].id);
-                        document.querySelector('.MainContentGenre').innerHTML += `
-                        <article class="card">
-                            <div class="informacion details">
-                            <h1>${result.data[res].name}</h1>
-                            <a href="./detail-genres.html?Id=${result.data[res].id}"   class="btn">ver mas</a>
-                            <img  src="${result.data[res].picture}">
-                            </div>
-                      </article>
-                    
-                    }
+    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre")
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(data){
     
-                   
+    let contenedorGeneros = document.querySelector(".MainContentGenre");
+    let generos = data.data
     
-                })
-                .catch(error => console.log('error', error));
-        }
+    console.log(generos);
     
     
+    for (const genero of generos) {
+        contenedorGeneros.innerHTML +=
+        `
+          <div class="card">
+            <div class="avatar" style="background-image: url('${genero.picture_big}')"></div>
+            <div>
+              <h1>${genero.name}</h1>
+              <a class="btn" href="detail-genres.html?id=${genero.id}"> Ver Más</a>
+            </div>
+          </div>
+        
+        `
+    }
     
-        buscarGeneros()
     
     
+    }).catch(function(error){
+        console.error(error)
+    })
 })
