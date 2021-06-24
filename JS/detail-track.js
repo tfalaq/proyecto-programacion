@@ -53,34 +53,35 @@ botonPlay.addEventListener("click", function(){
 
 })
 
-  
-
-    const add = document.querySelector('#addplaylist')
-    const added = document.querySelector('#addedplaylist')
-    if (window.localStorage.getItem('list')) {
-      let tracks = JSON.parse(window.localStorage.getItem('list'))
-      tracks.forEach(element => {
-        if (element.id == track.id) {
-          add.style.display = 'none'
-          added.style.display = 'block'
-        }
-      });
-
-
+const add = document.querySelector('#addplaylist')
+const added = document.querySelector('#addedplaylist')
+if (window.localStorage.getItem('list')) {
+  let tracks = JSON.parse(window.localStorage.getItem('list'))
+  tracks.forEach(element => {
+    if (element.id == track.id) {
+      add.style.display = 'none'
+      added.style.display = 'block'
     }
-    add.addEventListener('click', function () {
-      if (window.localStorage.getItem('list')) {
-        let tracks = JSON.parse(window.localStorage.getItem('list'))
-        tracks.push(track)
-        window.localStorage.setItem('list', JSON.stringify(tracks))
-        add.style.display = 'none'
-        added.style.display = 'block'
-      } else {
-        let tracks = [track]
-        window.localStorage.setItem('list', JSON.stringify(tracks))
-        add.style.display = 'none'
-        added.style.display = 'block'
-      }
+  });
+
+
+}
+add.addEventListener('click', function () {
+  if (window.localStorage.getItem('list')) {
+    let tracks = JSON.parse(window.localStorage.getItem('list'))
+    tracks.push(track)
+    window.localStorage.setItem('list', JSON.stringify(tracks))
+    add.style.display = 'none'
+    added.style.display = 'block'
+  } else {
+    let tracks = [track]
+    window.localStorage.setItem('list', JSON.stringify(tracks))
+    add.style.display = 'none'
+    added.style.display = 'block'
+  }
+
+
+  
 
     })
   })
