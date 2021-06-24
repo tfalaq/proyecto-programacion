@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./CSS/playlist.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />"
   <title>Kolav</title>
@@ -13,7 +13,7 @@
 <body>
   <header> <!-- Header -->
     <div class="navbar">
-      <img class="logo" src="../img/KOLAV-LOGO.png" alt="">
+      <img class="logo" src="./img/KOLAV-LOGO.png" alt="">
       <ul class="menu" id="menu">
 
         <li><a href="index.html">HOME</a></li>
@@ -26,9 +26,9 @@
     <i id="menucono" class="fas fa-bars"></i>
 
       <div class="Busqueda">
-      <form class="Busqueda" action="search-results.html" method="GET">
+      <form class="Busqueda" action="search-results.html" method=get>
         <button  type="submit" class="buscadorBoton"><i class="fas fa-search"></i></button>
-        <input class="buscadorFondo" type="text" placeholder="Busca tu Artista ">
+        <input class="buscadorFondo" type="text" placeholder="Busca tu Artista " name="search">
         </form>
     </div>
 
@@ -41,20 +41,9 @@
   <h3 class="Subtitle">
       <i class="far fa-play-circle"></i> My Playlist
     </h3>
+    <a href="playlist.html" style="color: red; text-decoration-line: none;" class="delete">Delete playlist</a>
     <div class="MainContent">
-    <div class="card">
-        <div class="avatar" style="background-image: url('../img/britney-in-the-zone.jpeg')"></div>
-        <div>
-          <p>Toxic</p>
-          <p id=infosingle>
-           <a class="infosingle" href="detail-artist.html"> Britney Spears</a></p>
-          <p id=infosingle>
-           <a class="infosingle" href="detail-album.html"> In The Zone </a></p>
-          <p id=infosingle>
-           <a href="genres.html" class="infosingle"> Pop </a></p>
-            <audio id=audios scr="audios/britneytoxic.mp3" controls="">
-          </audio>
-     </div>
+    
     </div>
   </main>
 
