@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./CSS/style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <title>Kolav</title>
@@ -13,13 +13,14 @@
 <body>
   <header>
     <div class="navbar">
-      <img class="logo" src="../img/KOLAV-LOGO.png" alt="">
+      <img class="logo" src="./img/KOLAV-LOGO.png" alt="">
       <ul class="menu" id="menu">
         <li><a href="index.html">HOME</a></li>
         <li><a href="detail-artist.html">ARTISTS</a></li>
         <li><a href="genres.html">GENRES</a></li>
         <li><a href="detail-album.html">ALBUMS</a></li>
       </ul>
+<<<<<<< HEAD
      <div class="Busqueda">
       <form class="Busqueda" action="search-results.html" method="GET">
         <button id="EjecutarBusqueda" class="buscadorBoton" type="submit"><i class="fas fa-search"></i></button>
@@ -28,214 +29,44 @@
      </div>
      <div class="menubars" id="menucono">
       <i id="menucono" class="fas fa-bars"></i>
+=======
+      <div class="Busqueda">
+        <form class="Busqueda" action="search-results.html" method=get>
+          <button id="EjecutarBusqueda" class="buscadorBoton" type="submit"><i class="fas fa-search"></i></button>
+          <input class="buscadorFondo" type="text" placeholder="Busca tu Artista " name="search">
+        </form>
+      </div>
+      <div class="menubars" id="menucono">
+        <i id="menucono" class="fas fa-bars"></i>
+      </div>
+>>>>>>> b8235262164036f9152009bbbb11d6f791f67dc7
     </div>
-  </div>  
   </header>
 
 
   <main>
-
-    <h3 class="Subtitle">
-      <i class="fas fa-crown"></i>Artist
-    </h3>
-    <section class="MainContent">
-  <article class="card">
-      <div >
-        <div class="avatar" style="background-image: url('../img/badbunny.jpeg')"></div>
-        <div class="informacion">
-          <p>Bad Bunny</p>
-          <p id=infoalbum> <a href="genres.html">  Reggeaton</a>
-           </p>
-            <ol id=infosingle >
-            <li> La noche de anoche </li>
-          <li> Dakiti </li> 
-          <li>Un dia (one day) </li>
-          <li> Yo visto asi </li> 
-          <li>Te mudaste </li>
-            </ol>
+    <div class="container-details">
+      <div class="card-Artist">
+        <img   style="width:100%">
+        <div class="container-Artist">
+          <h4 class="Subtitle-detail"><b></b></h4>
         </div>
       </div>
-  </article>
+      <div class="info">
+        <h2 class='Subtitle'></h2>
+        <div id="topTracks">
 
-  <article class="card">
-      <div >
-        <div class="avatar" style="background-image: url('../img/britney-spears.jpeg')"></div>
-          <p>Britney Spears</p>
-          <p id=infoalbum><a href="genres.html">Pop</a>
-            </p>
-            <ol id=infosingle >
-            <li> Baby one more time </li>
-          <li> Sometimes </li> 
-          <li> (you drive me) crazy</li>
-          <li> From the botton of my broken heart </li> 
-          <li> Oops!... i did it again</li>
-          </ol>
+        </div>
       </div>
-  </article>
+        <h1 class="card">Albums</h1>
 
-  <article class="card">
-      <div>
-        <div class="avatar" style="background-image: url('../img/chita-.jpeg')"></div>
-          <p>Chita</p>
-          <p id=infoalbum><a href="genres.html">Trap</a>
-            </p>
-            <ol id=infosingle >
-            <li> Dandote </li>
-          <li> I rili don't care </li> 
-          <li> No fue</li>
-          <li> Conversacion </li> 
-          <li> Mentira</li>
-          </ol>
-      </div>
-  </article>  
+      <div id ="topAlbums2">
+        <!-- Top Albums are loaded form api -->
 
-  <article class="card">
-      <div >
-        <div class="avatar" style="background-image: url('../img/sodastereo.png')"></div>
-          <p>Soda Stereo</p>
-          <p id=infoalbum> <a href="genres.html">Rock Nacional</a>
-            </p>
-            <ol id=infosingle >
-            <li> Cuando pase el temblor </li>
-          <li> Corazon delator </li> 
-          <li>Tratame suavemente </li>
-          <li> Lo que sangra </li> 
-          <li>En la ciudad de la furia </li>
-          </ol>
-      </div>
-  </article>
+       
+       </div>
 
-  <article class="card">
-      <div >
-        <div class="avatar" style="background-image: url('../img/taichu.png')"></div>
-          <p>Taichu</p>
-          <p id=infoalbum><a href="genres.html">Trap</a>
-            </p>
-            <ol id=infosingle >
-            <li> Water </li>
-          <li> Hi-C </li> 
-          <li>Yandere </li>
-          <li> Cheese </li> 
-          <li>Who </li>
-          </ol>
-      </div>
-  </article>
-
-  <article class="card">
-      <div>
-        <div class="avatar" style="background-image: url('../img/maluma.png')"></div>
-          <p>Maluma</p>
-          <p id=infoalbum><a href="genres.html">Reggeaton</a>
-            </p>
-            <ol id=infosingle >
-            <li> Parce </li>
-          <li>  Hawaii</li> 
-          <li> Mas de la luna</li>
-          <li> Aloha </li> 
-          <li> Agua de jamaica</li>
-            </ol>  
-      </div>
-  </article>
-
-  <article class="card">
-      <div >
-        <div class="avatar" style="background-image: url('../img/pinkfloyd.png')"></div>
-          <p>Pink Floyd</p>
-          <p id=infoalbum><a href="genres.html">
-            Rock</a></p>
-          <ol id=infosingle >
-            <li> Wish you were here </li>
-          <li> Another brick in the wall </li> 
-          <li> Confortably numb</li>
-          <li> Money </li> 
-          <li>Time </li>
-          </ol>
-      </div>
-  </article>
-
-  <article class="card">
-      <div >
-        <div class="avatar" style="background-image: url('../img/spinneto.png')"></div>
-          <p>Spinetta</p>
-          <p id=infoalbum><a href="genres.html">
-            Rock Nacional</a></p>
-            <ol id=infosingle >
-            <li> Seguir viviendo sin tu amor </li>
-          <li> Te para tres </li> 
-          <li> Barro tal vez</li>
-          <li> Bajan </li> 
-          <li>Ya no mires atras </li>
-          </ol> 
-      </div>
-  </article>
-
-  <article class="card">
-      <div >
-        <div class="avatar" style="background-image: url('../img/Rolling-stone.jpeg')"></div>
-          <p>The Rolling Stones</p>
-          <p id=infoalbum><a href="genres.html">
-            Rock</a></p>
-            <ol id=infosingle >
-            <li> Paint it, black </li>
-          <li> (I can't get no) satisfaction </li> 
-          <li> Start me up</li>
-          <li>Gimme shelter  </li> 
-          <li> Sympathy for the devil</li>
-          </ol>
-      </div>
-  </article>
-
-  <article class="card">
-      <div >
-        <div class="avatar" style="background-image: url('../img/thebeattles.jpeg')"></div>
-          <p>The Beatles</p>
-          <p id=infoalbum><a href="genres.html">
-            Rock</a></p>
-            <ol id=infosingle >
-            <li> Here comes the sun </li>
-          <li> Come tpgether </li> 
-          <li> Let it be</li>
-          <li> Yesterday </li> 
-          <li>Hey jude </li>
-          </ol>
-      </div>
-  </article>
-
-  <article class="card">
-      <div>
-        <div class="avatar" style="background-image: url('../img/ledzeppelin.png')"></div>
-          <p>Led Zeppelin</p>
-          <p id=infoalbum><a href="genres.html">
-            Rock</a></p>
-            <ol id=infosingle >
-            <li> Stairway to heaven </li>
-          <li> Whola lotta love </li> 
-          <li> Immigrant song</li>
-          <li> Black dog </li> 
-          <li> Ramble on</li>
-          </ol>
-      </div>
-  </article>
-
-  <article class="card">
-      <div>
-        <div class="avatar" style="background-image: url('../img/nickyjam.png')"></div>
-          <p>Nicky Jam</p>
-          <p id=infoalbum><a href="genres.html">Reggeaton</a>
-            </p>
-            <ol id=infosingle >
-            <li> Fan de tus fotos </li>
-          <li> Polvo </li> 
-          <li> Leyendas</li>
-          <li> X </li> 
-          <li> Muevelo</li>
-          </ol>
-      </div>
-  </article>
-
-  </section>
   </main>
-
   <footer class="footer">
     <div class="socialNet">
       <i class="fab fa-facebook"></i>
@@ -253,4 +84,5 @@
   </footer>
   <script src="./JS/detail-artist.js"></script>
 </body>
+
 </html>
