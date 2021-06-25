@@ -71,8 +71,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + albu
                     <h1>${track.title}</h1> 
                     <h3 id=infosingle>
                         Album: ${track.title} </h3>
-                    
-                        </div>
+                         </div>
                         <a class="btn" href="detail-track.html?id=${track.id}"> Play</a>
                     
                 </article> 

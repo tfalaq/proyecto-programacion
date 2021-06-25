@@ -123,7 +123,7 @@ body{
 .infosingle{
     font-family: 'Roboto', sans-serif;
         color: rgb(156, 112, 45);
-      font-size: 100%;
+      font-size: 70%;
       text-align: left;
         word-wrap: break-word;
          margin-left: 4px;
@@ -133,7 +133,9 @@ body{
 
 #audios{
     height: 5vh ;
-    margin: 10px;
+    margin: 5px;
+    margin-top: 40px;
+
     
 }
 
@@ -147,7 +149,7 @@ body{
         border-radius: 50%;
         margin: auto;
         top: 25%;
-        left: 65%;
+        left: 75%;
     
     }
 
@@ -164,12 +166,13 @@ body{
 }
 .delete{
     text-align:center;
-    margin: 450px;
+    margin: 50px;
 }
 .nocanciones{
-    margin: 200px;
-    text-align: center;
+    text-align:center;
+    margin: 50px;
 }
+
 
 
 .footer {
@@ -194,6 +197,9 @@ body{
 }
 
 #menucono {
+    display: none;
+}
+#menubar{
     display: none;
 }
 @media only screen and (max-width:600px){
