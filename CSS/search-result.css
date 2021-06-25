@@ -118,7 +118,9 @@ body{
 
     #audios{
     height: 5vh ;
-    margin: 10px 300px 10px 290px;
+    margin-left: 120px;
+    width: 250px;
+    margin-top: 20px;
     
 }
 .formap{
