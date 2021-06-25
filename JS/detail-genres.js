@@ -6,7 +6,7 @@ let queryString = window.location.search
 //paso de ese texto a un objeto
 let objetoQuery = new URLSearchParams(queryString);
 
-//ahora si obtengo el id del album
+//ahora si obtengo el id genero
 var generoId = objetoQuery.get('id');
 
 
