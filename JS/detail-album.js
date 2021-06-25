@@ -9,16 +9,38 @@ var albumId = objetoQuery.get('id');
 
 
 
+//con la propiedad fetch(promesa), traigo el url o endpoint, la info de los tracks y sus id
+
 
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + albumId)
+     
+//una vez que me llegue, convierto toda la info que nos trae deezer de string a formato json
+
     .then(function (response) {
         return response.json()
     })
     .then(function (data) {
-        console.log(data);
+
+
+        // imprimo en consola los datos que contiene el track
+
+         console.log(data);
+
+         // una vez que hago esto en la consola se ven todos los datos traidos por la API
+         // donde posteriormente vamos a usarlos en el innerHTML
+
+
+    
+         //aca pongo los datos que quiero cambiar
+
 
         let contenedorData = document.querySelector(".MainContent");
+        //declaro la variable seleccionando en el documento el MainContent
         let album = data
+
+       // al contenedor data lo manipulo en el documento 
+       //mediante innerHTML y le asigno el cover, el titulo, el 
+       // nombre de artista y la fecha de lanzamiento
 
         contenedorData.innerHTML = `
         <article>
@@ -39,6 +61,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + albu
       </article>
         `
 
+        // vuelvo a declarar una variable pero en este caso seleccionando los tracks
         let contenedorTracks = document.querySelector(".tracks")
         for (const track of album.tracks.data) {
             contenedorTracks.innerHTML += ` 
@@ -59,7 +82,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + albu
 
         }
 
-
+// si hay un error, lo imprime en consola :)
 
     }).catch(function (error) {
         console.error(error)
