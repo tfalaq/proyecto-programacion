@@ -10,7 +10,7 @@ let objetoQuery = new URLSearchParams(queryString);
 var generoId = objetoQuery.get('id');
 
 
-//con la propiedad fetch(promesa), traigo el url o endpoint, la info de los generos y sus id
+//con la propiedad fetch(promesa), traigo el endpoint, la info de los generos y sus id
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+ generoId)
  //then = una vez que me llegue, convierto la info 
  //que estaba en string a formato json

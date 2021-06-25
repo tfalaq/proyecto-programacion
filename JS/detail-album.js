@@ -9,12 +9,13 @@ var albumId = objetoQuery.get('id');
 
 
 
-//con la propiedad fetch(promesa), traigo el url o endpoint, la info de los tracks y sus id
+//con la propiedad fetch(promesa), traigo el url o endpoint, la info de los albums y sus id
 
 
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + albumId)
      
-//una vez que me llegue, convierto toda la info que nos trae deezer de string a formato json
+// una vez que me llegue, convierto toda la info que 
+// nos trae deezer de string a formato json
 
     .then(function (response) {
         return response.json()
