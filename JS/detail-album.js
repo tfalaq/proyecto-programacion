@@ -61,14 +61,13 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + albu
       </article>
         `
 
-        // vuelvo a declarar una variable pero en este caso seleccionando los tracks
+        // vuelvo a declarar una variable pero en este caso trae los tracks
         let contenedorTracks = document.querySelector(".tracks")
         for (const track of album.tracks.data) {
             contenedorTracks.innerHTML += ` 
                 <article class="card">
                     <div class="informacion">
-                    <h1>${track.title}</h1>
-                    
+                    <h1>${track.title}</h1>  s
                     <h3 id=infosingle>
                         Album: ${track.title} </h3>
                     
