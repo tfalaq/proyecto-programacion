@@ -20,7 +20,7 @@
          return response.json()
      })
      .then(function(data){
-           let subtitulo = document.querySelector('.Subtitle')
+           let subtitulo = document.querySelector('.tituloCabeza')
  
            subtitulo.innerHTML= `${data.name}`
          console.log(data);
@@ -29,7 +29,7 @@
          
          contenedorData.innerHTML =`
              <article class="card">
-                         <div class="informacion details">
+                         <div class="informaciondetails">
                          <h1>Cantidad de Albums : ${artista.nb_album}</h1>
                          <h1>Fans : ${artista.nb_fan}</h1>
                          <h1> Type : ${artista.type}</h1>
