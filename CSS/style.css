@@ -57,6 +57,7 @@ body {
     padding: 10px 20px;
     border: 1px solid yellow;
     border-radius: 30px;
+    
 }
 
 .navbar .menu li a:hover {
@@ -94,7 +95,7 @@ body {
     display: grid;
     gap: 2em;
     grid-template-columns: repeat(2, 1fr);
-    height: 70vh;
+    height: 100vh;
     margin: 30px;
 }
 
