@@ -93,9 +93,9 @@ body {
 .MainContent {
     display: grid;
     gap: 2em;
-    grid-template-columns: repeat(4, 1fr);
-    height: 50vh;
-    margin: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    height: 70vh;
+    margin: 30px;
 }
 
 .MainContentGenre{
@@ -143,8 +143,8 @@ body {
 .avatar {
     position: absolute;
     background-size: cover;
-    width: 85px;
-    height: 85px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     margin: auto;
     top: 25%;
@@ -369,6 +369,7 @@ font-family: 'Roboto', sans-serif;
         position: fixed;
         bottom: 0;
         width: 100%;
+        margin-bottom: auto;
 
     }
    
