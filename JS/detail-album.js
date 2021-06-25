@@ -1,10 +1,10 @@
-//obtengo el dato de query string
+//obtengo el dato de query string (agarro toda la url en formato de texto)
 let queryString = window.location.search
 
 //paso de ese texto a un objeto literal
 let objetoQuery = new URLSearchParams(queryString);
 
-//ahora si obtengo el id del album
+//ahora si obtengo el id del album para fetch
 var albumId = objetoQuery.get('id');
 
 
