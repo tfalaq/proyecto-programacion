@@ -162,7 +162,14 @@ body{
     font-size: 3em;
     margin: 30px;
 }
-
+.delete{
+    text-align:center;
+    margin: 450px;
+}
+.nocanciones{
+    margin: 200px;
+    text-align: center;
+}
 
 
 .footer {
