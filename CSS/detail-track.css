@@ -10,6 +10,7 @@ body {
     background-position: center;
     background-size: cover;
     background-color: rgba(0, 0, 0.918);
+    align-items: center;
 }
 
 .navbar {
@@ -100,15 +101,22 @@ body {
     text-align: left;
     word-wrap: break-word;
     margin-left: 20px;
-    text-decoration: none;
 
+}
+
+.track{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(156, 112, 45);
+    text-align: left;
+    margin-left: 20px;
 }
 
 #addplaylist {
     font-family: 'Roboto', sans-serif;
     /* color: rgb(161, 153, 142); */
     /* font-size: 100%; */
-    text-align: center;
+    text-align: left;
+    margin-left: 20px;
     word-wrap: break-word;
     /* margin-left: 300px; */
     text-decoration: none;
@@ -129,6 +137,7 @@ body {
 
 #addedplaylist {
     display: none;
+    margin-left: 20px;
     font-family: 'Roboto', sans-serif;
     color: rgb(190, 156, 61);
     /* font-size: 100%; */
@@ -143,14 +152,16 @@ body {
     font-size: 15px;
     padding: 5px 3px;
     border-radius: 30px;
+    
 
 }
 
 #audios {
-    height: 5vh;
+    height: 2vh;
     margin: 10px;
 
 }
+
 
 .formap {
     font-family: 'Roboto';
@@ -163,8 +174,22 @@ body {
     justify-content: space-around;
     cursor: pointer;
     margin-top: 10px;
+    margin-left: 20px;
 }
 
+.play-cancion{
+    font-family: 'Roboto';
+    font-size: 60%;
+    text-decoration: none;
+    color:black;
+    padding: 2px 5px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 20px;
+}
 
 .avatar {
     position: absolute;

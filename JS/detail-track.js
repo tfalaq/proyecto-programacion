@@ -36,7 +36,7 @@ window.addEventListener('load', function () {
 <div class="card">
   <div class="avatar" style="background-image: url('${track.album.cover_big}')"></div>
   <div>
-    <h1>${track.title}</h1>
+    <h1 class= "track" >${track.title}</h1>
     <h3 id=infosingle><a href="detail-artist.html?id=${track.artist.id}">${track.artist.name}</a>
     </h3>
     <h3 id=infosingle>Type:${track.type}</h3>

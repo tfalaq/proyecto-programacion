@@ -18,8 +18,8 @@ window.addEventListener('load', function(){
           <div class="card">
             <div class="avatar" style="background-image: url('${genero.picture_big}')"></div>
             <div>
-              <h1>${genero.name}</h1>
-              <a class="btn" href="detail-genres.html?id=${genero.id}"> Ver Más</a>
+              <h1 class= "genero" >${genero.name}</h1>
+              <a class="btn" href="detail-genres.html?id=${genero.id}"  > Ver Más</a>
             </div>
           </div>
         

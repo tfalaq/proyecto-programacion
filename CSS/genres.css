@@ -51,6 +51,7 @@ body {
     padding: 10px 20px;
     border: 1px solid yellow;
     border-radius: 30px;
+    
 }
 
 .navbar .menu li a:hover {
@@ -108,7 +109,12 @@ body {
 .card .btn {
     margin-left: 20px;
     margin-top: 20px;
+
 }
+.genero{
+    margin-bottom: 20px;
+}
+
 
 .Subtitle {
     color: white;
