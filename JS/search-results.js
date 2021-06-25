@@ -16,7 +16,7 @@ window.addEventListener('load', function () {
           data.data.forEach(track => {
               container.innerHTML += `<article class="card">
                                           <div class="card">
-                                              <div class="avatar" style="background-image: url('../img/britney-in-the-zone.jpeg')"></div>
+                                              <div class="avatar" style="background-image: url('${track.album.cover_big}')"></div>
                                               <div>                                                    
                                                   <p><a class="infosingle" href="detail-track.html?id=${track.id}">${track.title}</a></p>
                                                   <p id=infosingle>

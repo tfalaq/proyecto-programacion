@@ -5,7 +5,7 @@ window.addEventListener('load', function(){
         let tracks = JSON.parse(window.localStorage.getItem('list'))
         tracks.forEach(track => {
             container.innerHTML += `<div class="card">
-            <div class="avatar" style="background-image: url('../img/britney-in-the-zone.jpeg')"></div>
+            <div class="avatar" style="background-image: url('${track.album.cover_big}')"></div>
             <div>
               <p>${track.title}</p>
               <p id=infosingle>
@@ -17,6 +17,8 @@ window.addEventListener('load', function(){
               </audio>
          </div>`
         });
+    } else {
+        container.innerHTML = `<div style="color:red;">NO tenes canciones en la playlist</div>`
     }
 
 
