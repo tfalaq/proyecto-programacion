@@ -1,3 +1,6 @@
+window.addEventListener('load', function(){
+
+
 //obtengo el query string
 let queryString = window.location.search
 
@@ -85,3 +88,4 @@ add.addEventListener('click', function () {
 
     })
   })
+})
