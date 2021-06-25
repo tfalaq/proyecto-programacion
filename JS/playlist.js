@@ -18,7 +18,7 @@ window.addEventListener('load', function(){
          </div>`
         });
     } else {
-        container.innerHTML = `<div style="color:red;">NO tenes canciones en la playlist</div>`
+        container.innerHTML = `<div class="nocanciones" style="color:red;">NO tenes canciones en la playlist</div>`
     }
 
 
