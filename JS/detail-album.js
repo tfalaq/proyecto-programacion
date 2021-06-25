@@ -67,7 +67,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + albu
             contenedorTracks.innerHTML += ` 
                 <article class="card">
                     <div class="informacion">
-                    <h1>${track.title}</h1>  s
+                    <h1>${track.title}</h1> 
                     <h3 id=infosingle>
                         Album: ${track.title} </h3>
                     
